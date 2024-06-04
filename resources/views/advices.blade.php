@@ -1,9 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h1>Rechercher un conseil</h1>
-
-        <form action="" class="flex flex-col w-11/12 m-auto" >
-            
+        <form action="" class="flex flex-col w-11/12 m-auto">
             <label for="search">Rechercher un conseil</label>
             <input type="search" name="search" id="search" class="rounded-lg border-none"
                 placeholder="Rechercher par titre">
@@ -28,11 +26,6 @@
 
 
         <?php 
-
-
-if (isset($search)) {
-    var_dump($search);
-}
         foreach ($advices as $key => $value) {
             ?>
         <a href="/advices/<?php    echo $value->id;?>" class="w-11/12 ">
