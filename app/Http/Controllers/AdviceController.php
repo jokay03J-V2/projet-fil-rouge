@@ -14,12 +14,6 @@ class AdviceController extends Controller
     {
         $advices = Advice::all();
         $categorys = CategoryAdvice::all();
-        return view('/advices',["advices" =>  $advices, "categorys" => $categorys]);
-    }
-
-    public function search(): View
-    {
-        $search = Advice::where('name', 'like', '%' . request('search') . '%')->get();
-        return view('/search',["advices" =>  $search]);
+        return view('/advices', ["advices" => $advices, "categorys" => $categorys]);
     }
 }
