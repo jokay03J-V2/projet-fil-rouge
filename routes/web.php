@@ -9,4 +9,3 @@ Route::get('/', function () {
 })->name('page.home');
 
 Route::get('/advices', [AdviceController::class, 'index']);
-Route::post('/advices', [AdviceController::class, 'search']);
