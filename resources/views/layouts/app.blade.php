@@ -14,11 +14,11 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="">
+    <body class="flex flex-col w-screen">
             
         <!-- Page Heading -->
         @isset($header)
-            <header class="">
+            <header class="w-full flex flex-col justify-center items-center bg-primary text-white">
                     @include('layouts.navigation')
                 {{ $header }}
             </header>
@@ -28,8 +28,11 @@
             {{ $slot }}
         </main>
 
-        <footer>
-            <small>copy right by EDENSchool</small>
+        <footer class="w-full flex flex-col justify-center items-center bg-slate-600 p-10 text-white text-lg">
+            <small>Copy right by EDENSchool</small>
         </footer>
+        <script>
+            
+        </script>
     </body>
 </html>

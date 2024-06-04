@@ -12,8 +12,16 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                title: ['Poetsen One', ...defaultTheme.fontFamily.sans],
+                sans: ["Kanit", ...defaultTheme.fontFamily.sans]
             },
+            colors: {
+                'primary': "#6ACBEE",
+                'secondary': "#4889A1",
+                'tertiary': "#F2BFAC",
+                'tonal': "#2BA0CB",
+                'white': "#FFFFFF",
+            }
         },
     },
 

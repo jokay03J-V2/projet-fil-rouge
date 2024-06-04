@@ -1,10 +1,10 @@
-<nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
-    <h1>titre</h1>
-    <x-lucide-menu></x-lucide-menu>
-    <ul>
-        <li><a href="#">conseils</a></li>
-        <li><a href="#">Practiciens</a></li>
-        <li><a href="#">numéro d’urgence</a></li>
-        <li><a href="#">point d’information</a></li>
+<nav x-data="{ open: false }" class="w-full flex justify-between items-center">
+    <a href="{{route('page.home')}}" class="text-5xl ml-4 font-title">titre</a>
+    <x-lucide-menu class="w-8 lg:hidden"></x-lucide-menu>
+    <ul class="hidden lg:flex">
+        <x-link-nav href="#">conseils</x-link-nav>
+        <x-link-nav href="#">Practiciens</x-link-nav>
+        <x-link-nav href="#">Numéro d’urgence</x-link-nav>
+        <x-link-nav href="#">Point d’information</x-link-nav>
     </ul>
 </nav>
