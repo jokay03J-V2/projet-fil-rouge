@@ -7,6 +7,6 @@
         <x-link-nav href="#">Conseils</x-link-nav>
         <x-link-nav href="#">Practiciens</x-link-nav>
         <x-link-nav href="{{route('page.numbers')}}">Numéro d’urgence</x-link-nav>
-        <x-link-nav href="#">Point d’information</x-link-nav>
+        <x-link-nav href="/information-point">Point d’information</x-link-nav>
     </ul>
 </nav>

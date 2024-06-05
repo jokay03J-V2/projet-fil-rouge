@@ -10,3 +10,4 @@ Route::get('/', function () {
 
 Route::get('/advices', [AdviceController::class, 'index'])->name('page.advices');
 Route::get('/numbers', [UrgencyNumberController::class, 'index'])->name('page.numbers');
+Route::get('/information-point', [\App\Http\Controllers\InformationPointController::class, 'index']);
