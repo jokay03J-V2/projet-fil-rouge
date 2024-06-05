@@ -1,0 +1,1 @@
+<input type="submit" value="{{$slot}}" class="p-1 border-black border">
