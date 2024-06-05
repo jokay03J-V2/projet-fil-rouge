@@ -14,11 +14,9 @@ class AdviceFactory extends Factory
 {
 
     protected $model = Advice::class;
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+   
+
+     // create random data in our database
     public function definition(): array
     {
         return [

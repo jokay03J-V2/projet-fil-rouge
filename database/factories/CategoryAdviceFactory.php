@@ -12,11 +12,8 @@ class CategoryAdviceFactory extends Factory
 {
     
     protected $model = CategoryAdvice::class;
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+    // create random data in our database
+    
     public function definition(): array
     {
         return [
