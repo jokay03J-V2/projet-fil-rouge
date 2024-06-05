@@ -1,4 +1,7 @@
 <x-app-layout>
+
+   <!-- header -->
+   <!------------------------------------------------------------------------------------------------------>
    <x-slot name="header">
       <h1 class="font-title text-4xl m-2">home page</h1>
       <p class="font-sans text-lg w-10/12 text-center my-5">
@@ -7,9 +10,15 @@
          ducimus.
       </p>
    </x-slot>
+
+   <!------------------------------------------------------------------------------------------------------>
+   <!-- main contente -->
+   <!------------------------------------------------------------------------------------------------------>
    <section class="flex flex-col justify-center items-center">
       <h2 class="lg:self-start font-title text-3xl m-3">Fonctionnalitées</h2>
       <a href="" class="w-11/12 my-10">
+         <!-- Home carde -->
+         <!------------------------------------------------------------------------------------------------------>
          <article
             class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
             <img src="./img_folder/waldemar-RGumRVmV0MY-unsplash.jpg" alt="/"
@@ -25,6 +34,9 @@
             </hgroup>
          </article>
       </a>
+      <!------------------------------------------------------------------------------------------------------>
+
+      <!------------------------------------------------------------------------------------------------------>
       <a href="" class="w-11/12 my-10">
          <article
             class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
@@ -41,6 +53,9 @@
             </hgroup>
          </article>
       </a>
+      <!------------------------------------------------------------------------------------------------------>
+
+      <!------------------------------------------------------------------------------------------------------>
       <a href="" class="w-11/12 my-10">
          <article
             class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
@@ -57,6 +72,9 @@
             </hgroup>
          </article>
       </a>
+      <!------------------------------------------------------------------------------------------------------>
+
+      <!------------------------------------------------------------------------------------------------------>
       <a href="" class="w-11/12 my-10">
          <article
             class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
@@ -72,6 +90,7 @@
             </hgroup>
          </article>
       </a>
-
+      <!------------------------------------------------------------------------------------------------------>
    </section>
+   <!------------------------------------------------------------------------------------------------------>
 </x-app-layout>
