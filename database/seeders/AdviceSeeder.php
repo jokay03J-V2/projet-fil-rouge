@@ -16,3 +16,4 @@ class AdviceSeeder extends Seeder
         Advice::factory()->count(6)->create();
     }
 }
+
