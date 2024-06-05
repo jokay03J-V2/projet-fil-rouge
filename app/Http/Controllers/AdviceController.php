@@ -28,7 +28,7 @@ class AdviceController extends Controller
         $advices = $queryBuilder->get();
         $categorys = CategoryAdvice::all();
 
-        return view('/advices', [
+        return view('advices', [
             'advices' => $advices,
             'categorys' => $categorys,
             'query' => $query,
