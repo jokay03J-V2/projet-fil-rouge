@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{59ECC67F-C7FF-474A-B3B3-B24AD049910D}" Label="" LastModificationDate="1717424778" Name="Données conceptuelles_1" Objects="29" Symbols="6" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" signature="LDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{59ECC67F-C7FF-474A-B3B3-B24AD049910D}" Label="" LastModificationDate="1717579019" Name="fil_rouge" Objects="47" Symbols="11" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" signature="LDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -8,21 +8,22 @@
 <c:Children>
 <o:Model Id="o2">
 <a:ObjectID>59ECC67F-C7FF-474A-B3B3-B24AD049910D</a:ObjectID>
-<a:Name>Données conceptuelles_1</a:Name>
-<a:Code>DONNEES_CONCEPTUELLES_1</a:Code>
+<a:Name>fil_rouge</a:Name>
+<a:Code>FIL_ROUGE</a:Code>
 <a:CreationDate>1717422069</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422166</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577100</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
 <a:History>ORG {C21A4BC6-BC15-4A0F-971F-A7D347EF64BF}
-DAT 1717422071
+DAT 1717577070
 DLD {AF95C4B0-5467-49F4-9CCE-A6AF3568D6B8}
 DLD {8EC1A52A-28DB-4312-A58F-DF8775F999B2},{AF95C4B0-5467-49F4-9CCE-A6AF3568D6B8}
 DLD {CB9E0640-348C-42DF-8566-4AE839B331F0}
 DLD {5EB85908-F602-45C7-81FD-31BAFC8BF017},{CB9E0640-348C-42DF-8566-4AE839B331F0}
-ATT FOPT
 DLD {DE71D577-28DB-4FCB-AB8B-065ED83DC20F}
-DLD {19C8BFD9-F705-4FC5-8E89-EE785F440171}</a:History>
+DLD {19C8BFD9-F705-4FC5-8E89-EE785F440171}
+ATT NAME
+ATT CODE</a:History>
 <a:PackageOptionsText>[FolderOptions]
 
 [FolderOptions\Common]
@@ -383,12 +384,12 @@ BuildTrgr=No</a:ModelOptionsText>
 <c:GenerationOrigins>
 <o:Shortcut Id="o3">
 <a:ObjectID>9CFFD606-5F24-4738-94B2-8BACD16CE6F5</a:ObjectID>
-<a:Name>Données conceptuelles_1</a:Name>
-<a:Code>DONNEES_CONCEPTUELLES_1</a:Code>
-<a:CreationDate>1717422071</a:CreationDate>
-<a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422071</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:Name>fil_rouge</a:Name>
+<a:Code>FIL_ROUGE</a:Code>
+<a:CreationDate>1717577070</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
 <a:TargetStereotype/>
 <a:TargetID>C21A4BC6-BC15-4A0F-971F-A7D347EF64BF</a:TargetID>
 <a:TargetClassID>1E597170-9350-11D1-AB3C-0020AF71E433</a:TargetClassID>
@@ -401,8 +402,8 @@ BuildTrgr=No</a:ModelOptionsText>
 <a:Code>DIAGRAMME_1</a:Code>
 <a:CreationDate>1717422071</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422166</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
 <a:History>ORG {A65C7BC5-E10F-4FC8-B8E8-BA4BD74CB374}
 DAT 1717422071</a:History>
 <a:DisplayPreferences>[DisplayPreferences]
@@ -884,8 +885,7 @@ Shadow=0
 <a:PaperSource>15</a:PaperSource>
 <c:Symbols>
 <o:RelationshipSymbol Id="o5">
-<a:CreationDate>1717422163</a:CreationDate>
-<a:ModificationDate>1717422163</a:ModificationDate>
+<a:ModificationDate>1717577070</a:ModificationDate>
 <a:Rect>((-8287,11963), (12113,17888))</a:Rect>
 <a:ListOfPoints>((12113,17888),(3113,17888),(3113,11963),(-8287,11963))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
@@ -905,8 +905,7 @@ NAMA 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:RelationshipSymbol>
 <o:RelationshipSymbol Id="o9">
-<a:CreationDate>1717422166</a:CreationDate>
-<a:ModificationDate>1717422166</a:ModificationDate>
+<a:ModificationDate>1717577070</a:ModificationDate>
 <a:Rect>((-9112,-16162), (13613,-9937))</a:Rect>
 <a:ListOfPoints>((13613,-16162),(788,-16162),(788,-9937),(-9112,-9937))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
@@ -925,7 +924,48 @@ NAMA 0 Arial,8,N</a:FontList>
 <o:Relationship Ref="o12"/>
 </c:Object>
 </o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o13">
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Rect>((7689,-3661), (23627,4860))</a:Rect>
+<a:ListOfPoints>((23627,3614),(14101,3614),(14101,-3661))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>5906</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o14"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o15"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o16"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o17">
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Rect>((23777,3764), (40051,6539))</a:Rect>
+<a:ListOfPoints>((23777,3764),(32251,3764),(32251,6539),(40051,6539))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>6162</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o14"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o19"/>
+</c:Object>
+</o:RelationshipSymbol>
 <o:EntitySymbol Id="o7">
+<a:ModificationDate>1717577070</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
 <a:Rect>((-19310,6112), (-5062,14412))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
@@ -944,10 +984,11 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Entity Ref="o13"/>
+<o:Entity Ref="o20"/>
 </c:Object>
 </o:EntitySymbol>
 <o:EntitySymbol Id="o6">
+<a:ModificationDate>1717577070</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
 <a:Rect>((11213,14292), (21985,19688))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
@@ -966,10 +1007,11 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Entity Ref="o14"/>
+<o:Entity Ref="o21"/>
 </c:Object>
 </o:EntitySymbol>
 <o:EntitySymbol Id="o11">
+<a:ModificationDate>1717577070</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
 <a:Rect>((-19158,-15111), (-7012,-7537))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
@@ -988,10 +1030,11 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Entity Ref="o15"/>
+<o:Entity Ref="o22"/>
 </c:Object>
 </o:EntitySymbol>
 <o:EntitySymbol Id="o10">
+<a:ModificationDate>1717577070</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
 <a:Rect>((11887,-19837), (22613,-14287))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
@@ -1010,7 +1053,70 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Entity Ref="o16"/>
+<o:Entity Ref="o23"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o18">
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((36060,1593), (56940,8335))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o24"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o15">
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-284,-4633), (18434,161))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o25"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o14">
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((16589,1218), (30673,6010))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o26"/>
 </c:Object>
 </o:EntitySymbol>
 </c:Symbols>
@@ -1020,7 +1126,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:LogicalDiagram Ref="o4"/>
 </c:DefaultDiagram>
 <c:Entities>
-<o:Entity Id="o13">
+<o:Entity Id="o20">
 <a:ObjectID>6E568D61-9438-481D-9009-D231AC2DC4B4</a:ObjectID>
 <a:Name>advice</a:Name>
 <a:Code>ADVICE</a:Code>
@@ -1031,7 +1137,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:History>ORG {91C13B00-154F-4A22-88C3-646AE9C773E4}
 DAT 1717422071</a:History>
 <c:Identifiers>
-<o:Identifier Id="o17">
+<o:Identifier Id="o27">
 <a:ObjectID>00C10DA2-F3B4-470C-88E9-9EB9C299B8D2</a:ObjectID>
 <a:Name>Identifiant_1</a:Name>
 <a:Code>IDENTIFIANT_1</a:Code>
@@ -1042,15 +1148,15 @@ DAT 1717422071</a:History>
 <a:History>ORG {EA16380A-187B-4B75-8A7D-1430201A9559}
 DAT 1717422071</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o18"/>
+<o:EntityAttribute Ref="o28"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o17"/>
+<o:Identifier Ref="o27"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o18">
+<o:EntityAttribute Id="o28">
 <a:ObjectID>A599B3EC-23C7-40DC-8BCA-83A1600C4B1A</a:ObjectID>
 <a:Name>id_advice</a:Name>
 <a:Code>ID_ADVICE</a:Code>
@@ -1063,17 +1169,20 @@ DAT 1717422071</a:History>
 <a:DataType>I</a:DataType>
 <a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o19">
+<o:EntityAttribute Id="o29">
 <a:ObjectID>9F030184-8C0C-4F5C-A1F5-7D0015F4BA57</a:ObjectID>
-<a:Name>id_category_advice</a:Name>
-<a:Code>ID_CATEGORY_ADVICE</a:Code>
+<a:Name>category_advice_id</a:Name>
+<a:Code>CATEGORY_ADVICE_ID</a:Code>
 <a:CreationDate>1717422163</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422163</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717578955</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {8EC1A52A-28DB-4312-A58F-DF8775F999B2},{AF95C4B0-5467-49F4-9CCE-A6AF3568D6B8}
+ATT NAME
+ATT CODE</a:History>
 <a:DataType>I</a:DataType>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o20">
+<o:EntityAttribute Id="o30">
 <a:ObjectID>69ECEC99-C9CB-464A-806E-D91BC480F6D9</a:ObjectID>
 <a:Name>Name</a:Name>
 <a:Code>NAME</a:Code>
@@ -1086,33 +1195,32 @@ DAT 1717422071</a:History>
 <a:DataType>A100</a:DataType>
 <a:Length>100</a:Length>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o21">
+<o:EntityAttribute Id="o31">
 <a:ObjectID>DF06BF67-39E9-4231-8025-5695D2DCDB04</a:ObjectID>
 <a:Name>content_advice</a:Name>
 <a:Code>CONTENT_ADVICE</a:Code>
 <a:CreationDate>1717422071</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717424597</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
 <a:History>ORG {38CE9C66-4FFE-4AF9-9D6D-C6AD2B39EB87}
-DAT 1717422071
-ATT NAME
-ATT CODE</a:History>
+DAT 1717422071</a:History>
 <a:DataType>TXT</a:DataType>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o22">
+<o:EntityAttribute Id="o32">
 <a:ObjectID>F5F4208A-5E8D-47A4-A941-2B31AF72D4AA</a:ObjectID>
 <a:Name>img</a:Name>
 <a:Code>IMG</a:Code>
 <a:CreationDate>1717424560</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717424597</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {6ABFE4EE-E443-4957-BE59-BE0B7AC3C238}</a:History>
 <a:DataType>TXT</a:DataType>
 </o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o14">
+<o:Entity Id="o21">
 <a:ObjectID>18AE4A77-8C96-4031-8DE1-45C85C33BB51</a:ObjectID>
 <a:Name>category_advice</a:Name>
 <a:Code>CATEGORY_ADVICE</a:Code>
@@ -1123,7 +1231,7 @@ ATT CODE</a:History>
 <a:History>ORG {EE6F6350-B499-45FC-8C13-6E7CD470C235}
 DAT 1717422071</a:History>
 <c:Identifiers>
-<o:Identifier Id="o23">
+<o:Identifier Id="o33">
 <a:ObjectID>C71C6BB0-31E3-4660-A40B-B39020630D3C</a:ObjectID>
 <a:Name>Identifiant_1</a:Name>
 <a:Code>IDENTIFIANT_1</a:Code>
@@ -1134,15 +1242,15 @@ DAT 1717422071</a:History>
 <a:History>ORG {4BAB9911-289D-41F8-BE41-195C9B6EA3F8}
 DAT 1717422071</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o24"/>
+<o:EntityAttribute Ref="o34"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o23"/>
+<o:Identifier Ref="o33"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o24">
+<o:EntityAttribute Id="o34">
 <a:ObjectID>F59DAA65-78A5-4301-8AAE-0256C2F5388E</a:ObjectID>
 <a:Name>id_category_advice</a:Name>
 <a:Code>ID_CATEGORY_ADVICE</a:Code>
@@ -1155,23 +1263,21 @@ DAT 1717422071</a:History>
 <a:DataType>I</a:DataType>
 <a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o25">
+<o:EntityAttribute Id="o35">
 <a:ObjectID>87E41098-E914-48D7-A820-6749F7094464</a:ObjectID>
 <a:Name>content_category_advice</a:Name>
 <a:Code>CONTENT_CATEGORY_ADVICE</a:Code>
 <a:CreationDate>1717422071</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717424613</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
 <a:History>ORG {F8126953-CE9F-468F-9269-F68DA314D45B}
-DAT 1717422071
-ATT NAME
-ATT CODE</a:History>
+DAT 1717422071</a:History>
 <a:DataType>TXT</a:DataType>
 </o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o15">
+<o:Entity Id="o22">
 <a:ObjectID>EF027524-1115-4B65-ADF3-8E629284FBE2</a:ObjectID>
 <a:Name>emergency_number</a:Name>
 <a:Code>EMERGENCY_NUMBER</a:Code>
@@ -1182,7 +1288,7 @@ ATT CODE</a:History>
 <a:History>ORG {37376842-936E-4211-A4F1-9F224E405D2D}
 DAT 1717422071</a:History>
 <c:Identifiers>
-<o:Identifier Id="o26">
+<o:Identifier Id="o36">
 <a:ObjectID>D1E42B3C-E2EC-46B1-9360-28DD59671A16</a:ObjectID>
 <a:Name>Identifiant_1</a:Name>
 <a:Code>IDENTIFIANT_1</a:Code>
@@ -1193,15 +1299,15 @@ DAT 1717422071</a:History>
 <a:History>ORG {7E3C3DA5-6620-47AC-B16D-CE42AAE3F85F}
 DAT 1717422071</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o27"/>
+<o:EntityAttribute Ref="o37"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o26"/>
+<o:Identifier Ref="o36"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o27">
+<o:EntityAttribute Id="o37">
 <a:ObjectID>2582B5AE-D900-4AAE-ACAE-C58F45397DCB</a:ObjectID>
 <a:Name>id_number</a:Name>
 <a:Code>ID_NUMBER</a:Code>
@@ -1214,17 +1320,20 @@ DAT 1717422071</a:History>
 <a:DataType>I</a:DataType>
 <a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o28">
+<o:EntityAttribute Id="o38">
 <a:ObjectID>873A3C81-3ACA-4FD0-803D-4F5B183CB8FB</a:ObjectID>
-<a:Name>id_category_number</a:Name>
-<a:Code>ID_CATEGORY_NUMBER</a:Code>
+<a:Name>category_number_id</a:Name>
+<a:Code>CATEGORY_NUMBER_ID</a:Code>
 <a:CreationDate>1717422166</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422166</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717579019</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {5EB85908-F602-45C7-81FD-31BAFC8BF017},{CB9E0640-348C-42DF-8566-4AE839B331F0}
+ATT NAME
+ATT CODE</a:History>
 <a:DataType>I</a:DataType>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o29">
+<o:EntityAttribute Id="o39">
 <a:ObjectID>2BBDB7B7-FCA0-4BEA-88FC-446EFF0AC36B</a:ObjectID>
 <a:Name>content_number</a:Name>
 <a:Code>CONTENT_NUMBER</a:Code>
@@ -1238,7 +1347,7 @@ ATT NAME
 ATT CODE</a:History>
 <a:DataType>TXT</a:DataType>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o30">
+<o:EntityAttribute Id="o40">
 <a:ObjectID>87C1EB4A-CA0C-4CC7-8951-C634BE73856C</a:ObjectID>
 <a:Name>date</a:Name>
 <a:Code>DATE</a:Code>
@@ -1251,7 +1360,7 @@ ATT CODE</a:History>
 </o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o16">
+<o:Entity Id="o23">
 <a:ObjectID>DF9C33BF-8A21-46C8-9D9B-150268509870</a:ObjectID>
 <a:Name>category_number</a:Name>
 <a:Code>CATEGORY_NUMBER</a:Code>
@@ -1262,7 +1371,7 @@ ATT CODE</a:History>
 <a:History>ORG {738E6317-1A54-45B9-8917-28CDE34B2A04}
 DAT 1717422071</a:History>
 <c:Identifiers>
-<o:Identifier Id="o31">
+<o:Identifier Id="o41">
 <a:ObjectID>4916751E-78EC-4D57-B66D-E4915FE799B9</a:ObjectID>
 <a:Name>Identifiant_1</a:Name>
 <a:Code>IDENTIFIANT_1</a:Code>
@@ -1273,15 +1382,15 @@ DAT 1717422071</a:History>
 <a:History>ORG {56936B00-4898-4B86-BCF8-82ECDF96529A}
 DAT 1717422071</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o32"/>
+<o:EntityAttribute Ref="o42"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o31"/>
+<o:Identifier Ref="o41"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o32">
+<o:EntityAttribute Id="o42">
 <a:ObjectID>3A12EB96-F362-4AC2-8DAA-06C1BA7A9ACE</a:ObjectID>
 <a:Name>id_category_number</a:Name>
 <a:Code>ID_CATEGORY_NUMBER</a:Code>
@@ -1294,7 +1403,7 @@ DAT 1717422071</a:History>
 <a:DataType>I</a:DataType>
 <a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o33">
+<o:EntityAttribute Id="o43">
 <a:ObjectID>1D6FE1E0-FE5B-4B41-A208-A83D9EF51549</a:ObjectID>
 <a:Name>content_category_number</a:Name>
 <a:Code>CONTENT_CATEGORY_NUMBER</a:Code>
@@ -1310,6 +1419,210 @@ ATT CODE</a:History>
 </o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
+<o:Entity Id="o26">
+<a:ObjectID>1B5B4045-3772-42CF-8AE4-1E232CE7CC60</a:ObjectID>
+<a:Name>fk_information_service-information</a:Name>
+<a:Code>FK_INFORMATION_SERVICE_INFORMATION</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {361052EC-1568-4E29-B7CB-E929D375D46A}
+DAT 1717577066</a:History>
+<c:Identifiers>
+<o:Identifier Id="o44">
+<a:ObjectID>1559675F-04A1-4352-8C36-724706828C27</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o45"/>
+<o:EntityAttribute Ref="o46"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o44"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o45">
+<a:ObjectID>8017F121-746F-4681-BD45-21E3093AEAED</a:ObjectID>
+<a:Name>service_id</a:Name>
+<a:Code>SERVICE_ID</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717579000</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {759C649A-5F1D-4771-9F64-255A550DAC2E},{386EFAD4-0F88-4EFA-A696-47D682455FBE}
+DAT 1717577066
+ATT NAME
+ATT CODE</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o46">
+<a:ObjectID>03CC4750-E4B1-48EF-B2D8-A718BC0DB3AC</a:ObjectID>
+<a:Name>information_id</a:Name>
+<a:Code>INFORMATION_ID</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717579000</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {BC4EF007-ADEB-459E-B715-E1F16E8A29A5},{872B6B0F-1CBD-4631-A8D8-3C3863A62DA6}
+DAT 1717577066
+ATT NAME
+ATT CODE</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o24">
+<a:ObjectID>1784EDB5-AF4F-426C-A761-AF80E1467ABF</a:ObjectID>
+<a:Name>information_point</a:Name>
+<a:Code>INFORMATION_POINT</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {9A26A716-B945-4A2C-AF6D-E757B8B6B5BF}
+DAT 1717577066</a:History>
+<c:Identifiers>
+<o:Identifier Id="o47">
+<a:ObjectID>D058846F-840E-40BE-801E-D317A2E22ED9</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {2F27488C-E0D3-42C3-B44F-A3EA05CA833B}
+DAT 1717577066</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o48"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o47"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o48">
+<a:ObjectID>F9ADD63A-4310-4A71-8459-D30F9DE6163F</a:ObjectID>
+<a:Name>id_information</a:Name>
+<a:Code>ID_INFORMATION</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {BC4EF007-ADEB-459E-B715-E1F16E8A29A5}
+DAT 1717577066</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o49">
+<a:ObjectID>CD1C2C43-49E1-46BC-8C5C-DD37BD71B82C</a:ObjectID>
+<a:Name>name_information</a:Name>
+<a:Code>NAME_INFORMATION</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {A3434A12-F5EC-41BC-8EA1-61A59E448FF7}
+DAT 1717577066</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o50">
+<a:ObjectID>EF6D1FEE-53A6-457C-A618-8C61B2A358FF</a:ObjectID>
+<a:Name>hourly</a:Name>
+<a:Code>HOURLY</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {4B9863D6-833D-4900-9367-8C322F77A567}
+DAT 1717577066</a:History>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o51">
+<a:ObjectID>C8DD6032-52D2-481C-A7B0-6779CAAEC666</a:ObjectID>
+<a:Name>departement</a:Name>
+<a:Code>DEPARTEMENT</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {7CED7491-E457-4B79-ACBC-8329D540BBD5}
+DAT 1717577066</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o25">
+<a:ObjectID>0FD3DB75-A8F5-4562-B1D9-734F459CF928</a:ObjectID>
+<a:Name>information_service</a:Name>
+<a:Code>INFORMATION_SERVICE</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717578653</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {141BD52E-9B6B-4E0D-8313-2414F9334ACF}
+DAT 1717577066
+ATT NAME
+ATT CODE</a:History>
+<c:Identifiers>
+<o:Identifier Id="o52">
+<a:ObjectID>A0468B6F-622C-4F21-B83A-575B8A2E21C9</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {41908E4B-6886-48A9-8E83-2AD6AC0AECEB}
+DAT 1717577066</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o53"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o52"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o53">
+<a:ObjectID>DCFAD125-9FDC-4D9E-A567-714DB00862E4</a:ObjectID>
+<a:Name>id_service</a:Name>
+<a:Code>ID_SERVICE</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {759C649A-5F1D-4771-9F64-255A550DAC2E}
+DAT 1717577066</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o54">
+<a:ObjectID>0C96EED7-23C8-4D87-8A31-D62567926C25</a:ObjectID>
+<a:Name>name_service</a:Name>
+<a:Code>NAME_SERVICE</a:Code>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {20F8EE1E-798F-4797-87BD-9F3037411199}
+DAT 1717577066</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
 </c:Entities>
 <c:Relationships>
 <o:Relationship Id="o8">
@@ -1318,33 +1631,110 @@ ATT CODE</a:History>
 <a:Code>FK_ADVICE_CATEGORY_ADVICE</a:Code>
 <a:CreationDate>1717422163</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422195</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {AF95C4B0-5467-49F4-9CCE-A6AF3568D6B8}</a:History>
 <a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
-<o:Entity Ref="o13"/>
+<o:Entity Ref="o20"/>
 </c:Object1>
 <c:Object2>
-<o:Entity Ref="o14"/>
+<o:Entity Ref="o21"/>
 </c:Object2>
 <c:Joins>
-<o:RelationshipJoin Id="o34">
+<o:RelationshipJoin Id="o55">
 <a:ObjectID>0456DB44-FCEE-4BD6-BE73-3595FCE2D80A</a:ObjectID>
 <a:CreationDate>1717422163</a:CreationDate>
 <a:Creator>ugo</a:Creator>
 <a:ModificationDate>1717422163</a:ModificationDate>
 <a:Modifier>ugo</a:Modifier>
 <c:Object1>
-<o:EntityAttribute Ref="o24"/>
+<o:EntityAttribute Ref="o34"/>
 </c:Object1>
 <c:Object2>
-<o:EntityAttribute Ref="o19"/>
+<o:EntityAttribute Ref="o29"/>
 </c:Object2>
 </o:RelationshipJoin>
 </c:Joins>
 <c:ParentIdentifier>
-<o:Identifier Ref="o23"/>
+<o:Identifier Ref="o33"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o16">
+<a:ObjectID>B65CC8AA-C28B-4834-AA75-61FF296C4DF7</a:ObjectID>
+<a:Name>fk_information_service-information</a:Name>
+<a:Code>FK_INFORMATION_SERVICE_INFORMATION2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {386EFAD4-0F88-4EFA-A696-47D682455FBE}
+DAT 1717577066</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o25"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o26"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o56">
+<a:ObjectID>EB6A188B-FF86-41D0-9099-C51CD0A6F16B</a:ObjectID>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o53"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o45"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o52"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o19">
+<a:ObjectID>4E1A3623-3E96-46D1-BC21-2A0E203AE258</a:ObjectID>
+<a:Name>fk_information_service-information</a:Name>
+<a:Code>FK_INFORMATION_SERVICE_INFORMATION</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {872B6B0F-1CBD-4631-A8D8-3C3863A62DA6}
+DAT 1717577066</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o24"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o26"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o57">
+<a:ObjectID>4E598063-CA33-4C2A-A944-DEC24F588FCA</a:ObjectID>
+<a:CreationDate>1717577066</a:CreationDate>
+<a:Creator>Cannelle</a:Creator>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o48"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o46"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o47"/>
 </c:ParentIdentifier>
 </o:Relationship>
 <o:Relationship Id="o12">
@@ -1353,46 +1743,47 @@ ATT CODE</a:History>
 <a:Code>FK_NUMBER_CATEGORY_NUMBER</a:Code>
 <a:CreationDate>1717422166</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422208</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
+<a:ModificationDate>1717577070</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:History>ORG {CB9E0640-348C-42DF-8566-4AE839B331F0}</a:History>
 <a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
-<o:Entity Ref="o15"/>
+<o:Entity Ref="o22"/>
 </c:Object1>
 <c:Object2>
-<o:Entity Ref="o16"/>
+<o:Entity Ref="o23"/>
 </c:Object2>
 <c:Joins>
-<o:RelationshipJoin Id="o35">
+<o:RelationshipJoin Id="o58">
 <a:ObjectID>3655C36E-883F-48FD-81F0-EA4D9088B0D5</a:ObjectID>
 <a:CreationDate>1717422166</a:CreationDate>
 <a:Creator>ugo</a:Creator>
 <a:ModificationDate>1717422166</a:ModificationDate>
 <a:Modifier>ugo</a:Modifier>
 <c:Object1>
-<o:EntityAttribute Ref="o32"/>
+<o:EntityAttribute Ref="o42"/>
 </c:Object1>
 <c:Object2>
-<o:EntityAttribute Ref="o28"/>
+<o:EntityAttribute Ref="o38"/>
 </c:Object2>
 </o:RelationshipJoin>
 </c:Joins>
 <c:ParentIdentifier>
-<o:Identifier Ref="o31"/>
+<o:Identifier Ref="o41"/>
 </c:ParentIdentifier>
 </o:Relationship>
 </c:Relationships>
 <c:TargetModels>
-<o:TargetModel Id="o36">
+<o:TargetModel Id="o59">
 <a:ObjectID>C97D23F7-3DFF-49C3-B8C5-F25D017563A1</a:ObjectID>
-<a:Name>Données conceptuelles_1</a:Name>
-<a:Code>DONNEES_CONCEPTUELLES_1</a:Code>
+<a:Name>fil_rouge</a:Name>
+<a:Code>FIL_ROUGE</a:Code>
 <a:CreationDate>1717422071</a:CreationDate>
 <a:Creator>ugo</a:Creator>
-<a:ModificationDate>1717422071</a:ModificationDate>
-<a:Modifier>ugo</a:Modifier>
-<a:TargetModelURL>file:///C|/Users/ugo/Desktop/codelab/file_rouge/projet-fils-rouge/bdd/file_rouge.mcd</a:TargetModelURL>
+<a:ModificationDate>1717576895</a:ModificationDate>
+<a:Modifier>Cannelle</a:Modifier>
+<a:TargetModelURL>file:///C|/Users/Cannelle/codelab/projet-fils-rouge/bdd/fil_rouge.mcd</a:TargetModelURL>
 <a:TargetModelID>C21A4BC6-BC15-4A0F-971F-A7D347EF64BF</a:TargetModelID>
 <a:TargetModelClassID>1E597170-9350-11D1-AB3C-0020AF71E433</a:TargetModelClassID>
 <c:SessionShortcuts>
