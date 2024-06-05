@@ -4,7 +4,7 @@ use App\Http\Controllers\UrgencyNumberController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Home');
+    return view('home');
 })->name('page.home');
 
 Route::get('/advices', function () {
