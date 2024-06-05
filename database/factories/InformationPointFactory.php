@@ -19,7 +19,7 @@ class InformationPointFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'hourly' => $this->faker->text(),
-//            'departement' => $this->faker->(),
+            'departement' => $this->faker->randomDigit(),
         ];
     }
 }
