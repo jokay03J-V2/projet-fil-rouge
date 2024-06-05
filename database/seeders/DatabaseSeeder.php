@@ -6,6 +6,7 @@ use App\Models\UrgencyCategory;
 use App\Models\UrgencyNumber;
 use App\Models\InformationPoint;
 use App\Models\InformationService;
+use App\Models\ServicePointInformation;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Database\Factories\InformationPointFactory;
@@ -33,8 +34,13 @@ class DatabaseSeeder extends Seeder
             CategoryAdviceSeeder::class,
             AdviceSeeder::class,
         ]);
-         InformationPoint::factory(10)->create();
+         $points = InformationPoint::factory(5)->create();
 
-         InformationService::factory(10)->create();
+         $services = InformationService::factory(5)->create();
+        $points->each(function ($point) use ($services) {
+            $services->each(function ($service) use ($point) {
+                ServicePointInformation::create(['service_id' => $service->id, 'information_id' => $point->id]);
+            });
+        });
     }
 }
