@@ -8,4 +8,4 @@ Route::get('/', function () {
     return view('home');
 })->name('page.home');
 
-Route::get('/advices', [AdviceController::class, 'index']);
+Route::get('/advices', [AdviceController::class, 'index'])->name("page.advices");

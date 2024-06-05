@@ -34,22 +34,5 @@ class AdviceController extends Controller
             'query' => $query,
         ]);
     }
-    // public function search(Request $request): View
-    // {
-    //     $validated = $request->validate([
-    //         'query' => 'required|string|max:255',
-    //         'categoryAdvice' => 'required|string|max:255',
-    //     ]);
 
-    //     $query = $validated['query'];
-    //     $categoryAdvice = $validated['categoryAdvice'];
-
-    //     $results = Advice::where('name', 'LIKE', "%{$query}%")->get();
-    //     $resultsCat = CategoryAdvice::where('name', 'LIKE', "%{$categoryAdvice}%")->get();
-
-    //     $advices = Advice::all();
-    //     $categorys = CategoryAdvice::all();
-
-    //     return view('advices', ['advices' => $advices, 'categorys' => $categorys, 'results' => $results, 'query' => $query]);
-    // }
 }
