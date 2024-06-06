@@ -4,9 +4,9 @@
         <form action="{{route('information.point')}}">
             <input type="text" class="text-black" name="query">
             <select class="text-black" name="selectquery">
-                <option>--choose un option--</option>
+                <option value="null">--choose un option--</option>
                 @foreach($services as $service)
-                    <option>{{$service->name}}</option>
+                    <option value="{{$service->id}}">{{$service->name}}</option>
                 @endforeach
             </select>
             <button>Envoyer</button>
