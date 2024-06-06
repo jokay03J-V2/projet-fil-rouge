@@ -10,3 +10,5 @@ Route::get('/', function () {
 Route::get('/advices', function () {
     return view('advices');
 });
+
+Route::get('/numbers', [UrgencyNumberController::class, 'index'])->name('page.numbers');
