@@ -35,4 +35,9 @@ class AdviceController extends Controller
         ]);
     }
 
+    public function show($id)
+{
+    $advice = Advice::findOrFail($id);
+    return view('advice', compact('advice'));
+}
 }
