@@ -25,5 +25,10 @@ class DatabaseSeeder extends Seeder
             // on each created cateogry, create urgency number with category id
             UrgencyNumber::factory(10, ['category_id' => $model->id])->create();
         });
+
+        $this->call([
+            CategoryAdviceSeeder::class,
+            AdviceSeeder::class,
+        ]);
     }
 }
