@@ -23,7 +23,8 @@ return new class extends Migration
             $table->id("id")->primary();
             $table->string('name');
             $table->string('hourly');
-            $table->string('departement');
+            $table->string("address");
+            $table->string('postcode');
         });
 
 //        create table information_service-information
