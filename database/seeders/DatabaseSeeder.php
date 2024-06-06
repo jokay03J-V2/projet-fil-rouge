@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Film;
 use App\Models\InformationPoint;
 use App\Models\InformationService;
 use App\Models\ServicePointInformation;
@@ -19,12 +20,19 @@ class DatabaseSeeder extends Seeder
     {
          $points = InformationPoint::factory(5)->create();
 
+
          $services = InformationService::factory(5)->create();
         $points->each(function ($point) use ($services) {
             $services->each(function ($service) use ($point) {
-                ServicePointInformation::create(['service_id' => $service->id, 'information_id' => $point->id]);
+                $i = rand(0,1);
+                if ($i == 1) {
+                    ServicePointInformation::create(['service_id' => $service->id, 'information_id' => $point->id]);
+                }
             });
+
         });
+
+
 //        User::factory()->create([
 //            'name' => 'Test User',
 //            'email' => 'test@example.com',
