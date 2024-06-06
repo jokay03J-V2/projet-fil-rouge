@@ -1,13 +1,15 @@
 <x-app-layout>
     <x-slot name="header">
         <h1 class="text-3xl">Rechercher un point d'informations</h1>
-        <form>
-            <select>
-                <option selected >--choose un option--</option>
+        <form action="{{route('information.point')}}">
+            <input type="text" class="text-black" name="query">
+            <select class="text-black" name="selectquery">
+                <option>--choose un option--</option>
                 @foreach($services as $service)
                     <option>{{$service->name}}</option>
                 @endforeach
             </select>
+            <button>Envoyer</button>
         </form>
     </x-slot>
     <div class="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-4 p-4">
