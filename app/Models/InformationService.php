@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class InformationService extends Model
 {
@@ -12,4 +13,9 @@ class InformationService extends Model
     use HasFactory;
 
     protected $fillable = ["name"];
+
+    public function InformationPoint(): BelongsToMany
+    {
+        return $this->belongsToMany(InformationPoint::class);
+    }
 }
