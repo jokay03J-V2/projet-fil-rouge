@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdviceController;
 use App\Http\Controllers\UrgencyNumberController;
 use Illuminate\Support\Facades\Route;
 
