@@ -39,7 +39,8 @@ class InformationPointController extends Controller
             $points = InformationPoint::where('postcode', 'like',  $query . '%')->get();
 
         } else if($request->has('query') && $request->query('query') !== 'null') {
-
+            $query = $request->input('query');
+            $points = InformationPoint::where('postcode', 'like',  $query . '%')->get();
         }
 
 
