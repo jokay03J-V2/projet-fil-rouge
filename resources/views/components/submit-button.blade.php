@@ -1,1 +1,1 @@
-<input type="submit" value="{{$slot}}" class="p-1 border-black border">
+<input type="submit" value="{{$slot}}" class="py-1 px-2 rounded-lg bg-white text-black">
