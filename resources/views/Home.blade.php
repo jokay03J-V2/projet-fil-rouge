@@ -16,7 +16,7 @@
    <!------------------------------------------------------------------------------------------------------>
    <section class="flex flex-col justify-center items-center">
       <h2 class="lg:self-start font-title text-3xl m-3">Fonctionnalitées</h2>
-      <a href="" class="w-11/12 my-10">
+      <a href="{{route("information.point")}}" class="w-11/12 my-10">
          <!-- Home card -->
          <!------------------------------------------------------------------------------------------------------>
          <article
