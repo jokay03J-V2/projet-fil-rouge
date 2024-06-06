@@ -24,16 +24,12 @@
             </header>
         @endisset
         <!-- Page Content -->
-        <main>
+        <main {{ $attributes->merge(['class' => 'min-h-[70vh]']) }}>
             {{ $slot }}
         </main>
 
         <footer class="w-full flex flex-col justify-center items-center bg-slate-600 p-10 text-white text-lg">
             <small>Create by EDENSchool</small>
         </footer>
-        <script>
-            let 
-            
-        </script>
     </body>
 </html>
