@@ -17,9 +17,10 @@ class InformationPointFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
-            'hourly' => $this->faker->text(),
-            'departement' => $this->faker->randomDigit(),
+            'name' => $this->faker->word(),
+            'hourly' => "9h30-12h00 13h30-18h30 ",
+            'address' => $this->faker->streetAddress(),
+            'postcode' => $this->faker->postcode(),
         ];
     }
 }
