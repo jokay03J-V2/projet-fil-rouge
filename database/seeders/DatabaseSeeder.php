@@ -20,8 +20,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        // create category
         UrgencyCategory::factory(5)->create()->each(function ($model) {
-            UrgencyNumber::factory(1, ['category_id' => $model->id])->create();
+            // on each created cateogry, create urgency number with category id
+            UrgencyNumber::factory(10, ['category_id' => $model->id])->create();
         });
     }
 }
