@@ -11,4 +11,6 @@ Route::get('/advices', function () {
     return view('advices');
 });
 
-Route::get('/information-point', [\App\Http\Controllers\InformationPointController::class, 'index']);
+Route::get('/information-point', [\App\Http\Controllers\InformationPointController::class, 'index'])->name('information.point');
+
+
