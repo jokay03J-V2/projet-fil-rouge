@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class CategoryAdviceFactory extends Factory
 {
     
-    protected $model = CategoryAdvice::class;
     /**
      * Define the model's default state.
      *

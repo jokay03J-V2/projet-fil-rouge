@@ -13,7 +13,6 @@ use Nette\Utils\Random;
 class AdviceFactory extends Factory
 {
 
-    protected $model = Advice::class;
     /**
      * Define the model's default state.
      *

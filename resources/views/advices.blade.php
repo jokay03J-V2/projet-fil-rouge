@@ -2,21 +2,24 @@
     <x-slot name="header">
         <h1 class="text-6xl font-title p-6 text-center">Rechercher un conseil</h1>
 
-        <form action="{{ route('page.advices') }}" method="GET" class="flex flex-col w-11/12 m-auto">
-            @csrf
-            <label for="search" class="text-black">Rechercher un conseil</label>
-            <input type="search" name="query" id="search" class="rounded-lg border-none text-black"
-                placeholder="Rechercher par titre">
 
-            <div>
-                <select name="categoryAdvice" class="rounded-lg border-none w-80 m-6 text-black">
+        <x-form action="{{route('page.advices')}}">
+            <div class="flex flex-col">
+                <label for="search" class="text-black">Rechercher un conseil</label>
+                <input type="search" name="query" id="search" class="rounded-lg border-none text-black"
+                    placeholder="Rechercher par titre">
+            </div>
+            <div class="flex flex-col">
+                <label for="query" class="text-black">Selectionnez une catégorie</label>
+                <x-select name="categoryAdvice" id="query">
                     <option value="all" selected>Toutes les catégories</option>
-                    @foreach ($categorys as $category)
+                    @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
-                </select>
-                <button type="submit" class="text-lg border p-3 rounded-lg">OK</button>
-        </form>
+                </x-select>
+            </div>
+            <x-submit-button>Rechercher</x-submit-button>
+        </x-form>
         </div>
 
     </x-slot>

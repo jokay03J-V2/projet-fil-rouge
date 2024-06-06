@@ -26,11 +26,11 @@ class AdviceController extends Controller
         }
         // check if the data received by the query input is equal to the data in the name column of our database, check if the value of the categoryAdvice input is equal to all 
         $advices = $queryBuilder->get();
-        $categorys = CategoryAdvice::all();
+        $categories = CategoryAdvice::all();
         // return variables on the view advices 
         return view('advices', [
             'advices' => $advices,
-            'categorys' => $categorys,
+            'categories' => $categories,
             'query' => $query,
         ]);
     }
