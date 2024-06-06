@@ -20,14 +20,9 @@ class UrgencyNumberFactory extends Factory
     public function definition(): array
     {
         return [
-            'content' => fake()->phoneNumber()
+            'name' => fake()->realText(50),
+            'content' => fake()->phoneNumber(),
+            'hourly' => '24h/24h'
         ];
-    }
-
-    public function setCategory(string $categoryId)
-    {
-        $this->state(fn(array $attributes) => [
-            'category_id' => $categoryId,
-        ]);
     }
 }
