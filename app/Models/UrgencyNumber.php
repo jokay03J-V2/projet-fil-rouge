@@ -11,5 +11,5 @@ class UrgencyNumber extends Model
     public $timestamps = false;
     use HasFactory;
 
-    protected $fillable = ["category_id", "content"];
+    protected $fillable = ["category_id", "content", "name", "hourly"];
 }
