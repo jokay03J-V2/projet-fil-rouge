@@ -3,7 +3,7 @@
     <!-- header -->
     <!------------------------------------------------------------------------------------------------------>
     <x-slot name="header">
-        <h1 class="font-title text-4xl m-2">Rechercher un praticie</h1>
+        <h1 class="font-title text-4xl m-2">Rechercher un praticien</h1>
         <p class="font-sans text-lg w-10/12 text-center my-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, consequuntur! Excepturi dolores tempore
             debitis, placeat fugiat error laborum voluptatem aperiam illum nam recusandae! Saepe quam officiis id eius
