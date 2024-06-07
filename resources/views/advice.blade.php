@@ -15,7 +15,7 @@
             </p>
         </article>
 
-        <a href="/advice" class="md:hidden"><button class="bg-primary p-2 m-14 w-20 rounded-lg mb-32">retour</button></a>
+        <a href="/advices" class="md:hidden"><button class="bg-primary p-2 m-14 w-20 rounded-lg mb-32">retour</button></a>
 
     </div>
 </x-app-layout>
