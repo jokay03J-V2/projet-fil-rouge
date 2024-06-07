@@ -27,7 +27,7 @@ class InformationPointController extends Controller
             $points = $result;
 
         }
-        
+
         else if ($request->has('selectquery') && $request->query('selectquery') !== 'null' ) {
             $result = $points->filter(function ($point) use ($request) {
                 return count(ServicePointInformation::where([['information_id', '=', $point->id], ['service_id', '=',(int) $request->input('selectquery')]])->get()) > 0;
