@@ -40,7 +40,7 @@ jobs:
       run: 'sudo systemctl start mysql.service'
 
     - name: Start migration
-      run: php artisan migration:fresh --seed --env=testing
+      run: php artisan migrate:fresh --seed --env=testing
 
     - name: Start tests
       run: php artisan test --env=testing
