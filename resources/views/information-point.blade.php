@@ -2,14 +2,14 @@
     <x-slot name="header">
         <h1 class="text-3xl">Rechercher un point d'informations</h1>
         <x-form action="{{route('information.point')}}">
-            <input type="text" class="text-black" name="query">
-            <select class="text-black" name="selectquery">
+            <input type="text" class="text-black border-none rounded-lg" name="query" placeholder="Chercher par code postale">
+            <x-select class="text-black" name="selectquery" id="services">
                 <option value="null">--choose un option--</option>
                 @foreach($services as $service)
                     <option value="{{$service->id}}">{{$service->name}}</option>
                 @endforeach
-            </select>
-            <button>Envoyer</button>
+            </x-select>
+            <x-submit-button>Envoyer</x-submit-button>
         </x-form>
     </x-slot>
     <div class="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-4 p-4">
