@@ -1,5 +1,5 @@
 @Vite(['resources/js/API_logique.js'])
-<x-app-layout class="">
+<x-app-layout>
     <!-- header -->
     <!------------------------------------------------------------------------------------------------------>
     <x-slot name="header">
@@ -10,7 +10,12 @@
             ex
             ducimus.
         </p>
-        <form></form>
+        <x-form action="#">
+            <x-select name="practitioners_select" id="practitioners_select">
+                <option value="default">select profession</option>
+            </x-select>
+            <x-submit-button id="btn_form_practitioners">sort</x-submit-button>
+        </x-form>
     </x-slot>
     <!------------------------------------------------------------------------------------------------------>
     <!-- main contente -->
