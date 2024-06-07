@@ -9,7 +9,6 @@ use App\Models\InformationService;
 use App\Models\ServicePointInformation;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Database\Factories\InformationPointFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
