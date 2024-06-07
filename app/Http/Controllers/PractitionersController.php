@@ -10,6 +10,6 @@ class PractitionersController extends Controller
 {
     public function showPractitioner(): View
     {
-        return view('find_paractitioners');
+        return view('find_practitioners');
     }
 }

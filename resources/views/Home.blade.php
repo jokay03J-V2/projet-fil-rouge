@@ -37,7 +37,7 @@
       <!------------------------------------------------------------------------------------------------------>
 
       <!------------------------------------------------------------------------------------------------------>
-      <a href="{{route("page.advice")}}" class="w-11/12 my-10">
+      <a href="{{route("page.advices")}}" class="w-11/12 my-10">
          <article
             class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
             <img src="./img_folder/conseil.jpg" alt="/" class="w-12/12 min-h-40 lg:w-3/12 rounded-2xl lg:min-h-50">

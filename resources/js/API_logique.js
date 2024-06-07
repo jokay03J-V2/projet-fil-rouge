@@ -1,6 +1,6 @@
-const practitioners_select = document.getElementById('practitioners_select');
-const btn_form_practitioners = document.getElementById('btn_form_practitioners');
-const liste_of_practitioners = document.getElementById('liste_of_practitioners');
+const PractitionersSelect = document.getElementById('practitioners_select');
+const BtnFormPractitioners = document.getElementById('btn_form_practitioners');
+const ListeOfPractitioners = document.getElementById('liste_of_practitioners');
 
 
 //this function creates and adds the cards in the DOM //;
@@ -29,7 +29,6 @@ function addCard(info) {
         let address = document.createElement("address");
         let p = document.createElement('p');
         p.classList.add('text-xl');
-        let tmp = table_of_svg[i];
         if (i === 1) {
             if (info.libelle_profession === null || info.libelle_profession === undefined) {
                 p.textContent = `n'a pas de proféssion`
@@ -68,7 +67,7 @@ function addCard(info) {
     h2.append(span)
     article.append(h2, ul);
     li_master.append(article);
-    liste_of_practitioners.append(li_master)
+    ListeOfPractitioners.append(li_master)
 }
 
 // this function will return to us and display all practiens //
@@ -76,7 +75,6 @@ function notSort() {
     fetch('https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins@public/records?select=civilite%2C%20column_10%2C%20nom%2C%20libelle_profession%2C%20adresse%2Ccommune&limit=-1&timezone=Europe%2FParis')
         .then(res => res.json())
         .then(res => {
-            console.log(res);
             res.results.forEach(e => {
                 addCard(e);
             });
@@ -91,27 +89,27 @@ fetch('https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins@
             let option = document.createElement('option');
             option.value = `${e.libelle_profession}`;
             option.textContent = `${e.libelle_profession}`;
-            practitioners_select.append(option)
+            PractitionersSelect.append(option)
         })
     })
 
 notSort()
 
 // this event updates the cardre according to the select
-btn_form_practitioners.addEventListener('click', (e) => {
+BtnFormPractitioners.addEventListener('click', (e) => {
     e.preventDefault();
-    fetch(`https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins@public/records?select=civilite%2C%20column_10%2C%20nom%2C%20libelle_profession%2C%20adresse%2Ccommune&where=libelle_profession%20%3D%20%22${practitioners_select.value}%22&limit=-1&timezone=Europe%2FParis`)
+    fetch(`https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins@public/records?select=civilite%2C%20column_10%2C%20nom%2C%20libelle_profession%2C%20adresse%2Ccommune&where=libelle_profession%20%3D%20%22${PractitionersSelect.value}%22&limit=-1&timezone=Europe%2FParis`)
         .then(res => res.json())
         .then(res => {
             //--- this piece of code is used to delete all the old cards ---//
-            [...liste_of_practitioners.children].forEach(f => {
+            [...ListeOfPractitioners.children].forEach(f => {
                 f.remove()
             });
             //-------------------------------------------------------------//
 
             // this code generates the new card according to the select 
             //-------------------------------------------------------------//
-            if (practitioners_select.value === 'default') {
+            if (PractitionersSelect.value === 'default') {
                 notSort()
             } else {
                 res.results.forEach(res => {
