@@ -45,10 +45,6 @@ class InformationPointController extends Controller
 //         search in bdd where postcode start with user input
             $query = $request->input('query');
             $points = InformationPoint::where('postcode', 'like',  $query . '%')->get();
-
-        } else if($request->has('query') && $request->query('query') !== 'null') {
-            $query = $request->input('query');
-            $points = InformationPoint::where('postcode', 'like',  $query . '%')->get();
         }
 
 
