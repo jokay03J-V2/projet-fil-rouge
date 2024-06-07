@@ -10,3 +10,7 @@ Route::get('/', function () {
 Route::get('/advices', function () {
     return view('advices');
 });
+
+Route::get('/practitioners', function () {
+    return view('find_practitioners');
+})->name('page.find_practitioners');

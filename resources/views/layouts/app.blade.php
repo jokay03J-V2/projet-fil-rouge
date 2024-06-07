@@ -18,7 +18,7 @@
             
         <!-- Page Heading -->
         @isset($header)
-            <header class="w-full flex flex-col justify-center items-center bg-primary text-white mb-8">
+            <header class="w-full flex flex-col justify-center items-center bg-primary text-white">
                     @include('layouts.navigation')
                 {{ $header }}
             </header>
@@ -31,9 +31,5 @@
         <footer class="w-full flex flex-col justify-center items-center bg-slate-600 p-10 text-white text-lg">
             <small>Create by EDENSchool</small>
         </footer>
-        <script>
-            let 
-            
-        </script>
     </body>
 </html>
