@@ -11,3 +11,6 @@ Route::get('/', function () {
 Route::get('/advices', [AdviceController::class, 'index'])->name('page.advices');
 Route::get('/advices/{advice}', [AdviceController::class, 'show'])->name('page.advice');
 Route::get('/numbers', [UrgencyNumberController::class, 'index'])->name('page.numbers');
+Route::get('/information-point', [\App\Http\Controllers\InformationPointController::class, 'index'])->name('information.point');
+
+

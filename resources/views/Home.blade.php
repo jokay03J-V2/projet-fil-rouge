@@ -12,19 +12,19 @@
    </x-slot>
 
    <!------------------------------------------------------------------------------------------------------>
-   <!-- main contente -->
+   <!-- main content -->
    <!------------------------------------------------------------------------------------------------------>
    <section class="flex flex-col justify-center items-center">
       <h2 class="lg:self-start font-title text-3xl m-3">Fonctionnalitées</h2>
-      <a href="" class="w-11/12 my-10">
-         <!-- Home carde -->
+      <a href="{{route("information.point")}}" class="w-11/12 my-10">
+         <!-- Home card -->
          <!------------------------------------------------------------------------------------------------------>
          <article
             class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
             <img src="./img_folder/waldemar-RGumRVmV0MY-unsplash.jpg" alt="/"
                class="w-12/12 min-h-40 lg:w-3/12 lg:p-2 rounded-2xl">
             <hgroup class="w-10/12 p-2 text-center lg:text-start">
-               <h3 class="text-secondary text-3xl font-title m-2">point d'information</h3>
+               <h3 class="text-secondary text-3xl font-title m-2">point d'informations</h3>
                <p class="m-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae blanditiis tenetur tempore
                   rem

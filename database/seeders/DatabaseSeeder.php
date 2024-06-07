@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\UrgencyCategory;
+use App\Models\UrgencyNumber;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -20,7 +22,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategoryAdviceSeeder::class,
             AdviceSeeder::class,
-            UrgencyNumberSeeder::class
+            UrgencyNumberSeeder::class,
+            InformationPointSeeder::class,
         ]);
+
     }
 }
