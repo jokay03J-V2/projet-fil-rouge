@@ -10,3 +10,6 @@ Route::get('/', function () {
 
 Route::get('/advices', [AdviceController::class, 'index'])->name('page.advices');
 Route::get('/numbers', [UrgencyNumberController::class, 'index'])->name('page.numbers');
+Route::get('/practitioners', function () {
+    return view('find_practitioners');
+})->name('page.find_practitioners');

@@ -18,7 +18,7 @@
             
         <!-- Page Heading -->
         @isset($header)
-            <header class="w-full flex flex-col justify-center items-center bg-primary text-white mb-8">
+            <header class="w-full flex flex-col justify-center items-center bg-primary text-white">
                     @include('layouts.navigation')
                 {{ $header }}
             </header>
