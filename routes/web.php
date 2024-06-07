@@ -13,4 +13,6 @@ Route::get('/advices/{advice}', [AdviceController::class, 'show'])->name('page.a
 Route::get('/numbers', [UrgencyNumberController::class, 'index'])->name('page.numbers');
 Route::get('/information-point', [\App\Http\Controllers\InformationPointController::class, 'index'])->name('information.point');
 
-
+Route::get('/practitioners', function () {
+    return view('find_practitioners');
+})->name('page.find_practitioners');
