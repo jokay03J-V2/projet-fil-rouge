@@ -20,9 +20,9 @@
          <!-- Home card -->
          <!------------------------------------------------------------------------------------------------------>
          <article
-            class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
-            <img src="./img_folder/waldemar-RGumRVmV0MY-unsplash.jpg" alt="/"
-               class="w-12/12 min-h-40 lg:w-3/12 lg:p-2 rounded-2xl">
+            class="flex flex-col lg:flex-row items-center lg:items-start  justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="./img_folder/information_point.jpg" alt="/"
+               class="w-12/12 min-h-40 lg:w-3/12 rounded-2xl lg:min-h-50">
             <hgroup class="w-10/12 p-2 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">point d'informations</h3>
                <p class="m-2">
@@ -37,11 +37,10 @@
       <!------------------------------------------------------------------------------------------------------>
 
       <!------------------------------------------------------------------------------------------------------>
-      <a href="" class="w-11/12 my-10">
+      <a href="{{route("page.advices")}}" class="w-11/12 my-10">
          <article
-            class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
-            <img src="./img_folder/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" alt="/"
-               class="w-12/12 min-h-40 lg:w-3/12 lg:p-2 rounded-2xl">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="./img_folder/conseil.jpg" alt="/" class="w-12/12 min-h-40 lg:w-3/12 rounded-2xl lg:min-h-50">
             <hgroup class="w-10/12 p-2 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">conseils</h3>
                <p class="m-2">
@@ -56,13 +55,13 @@
       <!------------------------------------------------------------------------------------------------------>
 
       <!------------------------------------------------------------------------------------------------------>
-      <a href="" class="w-11/12 my-10">
+      <a href="{{route('page.find_practitioners')}}" class="w-11/12 my-10">
          <article
-            class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
-            <img src="./img_folder/usman-yousaf-MP9W9DtdoBI-unsplash.jpg" alt="/"
-               class="w-12/12 min-h-40 lg:w-3/12 lg:p-2 rounded-2xl">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="./img_folder/practitioners.jpg" alt="/"
+               class="w-12/12 min-h-40 lg:w-3/12 rounded-2xl lg:min-h-50">
             <hgroup class="w-10/12 p-2 text-center lg:text-start">
-               <h3 class="text-secondary text-3xl font-title m-2">Practiciens</h3>
+               <h3 class="text-secondary text-3xl font-title m-2">Praticiens</h3>
                <p class="m-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae blanditiis tenetur tempore
                   rem
@@ -75,10 +74,11 @@
       <!------------------------------------------------------------------------------------------------------>
 
       <!------------------------------------------------------------------------------------------------------>
-      <a href="" class="w-11/12 my-10">
+      <a href="{{route('page.numbers')}}" class="w-11/12 my-10">
          <article
-            class="flex flex-col lg:flex-row items-center justify-center w-full rounded-2xl border-2 border-primary">
-            <img src="./img_folder/standardiste.jpg" alt="/" class="w-12/12 min-h-40 lg:w-3/12 lg:p-2 rounded-2xl">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="./img_folder/emergency_number.jpg" alt="/"
+               class="w-12/12 min-h-40 lg:w-3/12 rounded-2xl lg:min-h-50">
             <hgroup class="w-10/12 p-2 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Numéro d’urgence</h3>
                <p class="m-2">
