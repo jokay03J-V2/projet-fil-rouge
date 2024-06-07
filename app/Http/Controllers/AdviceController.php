@@ -35,4 +35,9 @@ class AdviceController extends Controller
         ]);
     }
 
+    public function show(Advice $advice)
+    {
+        // returns to advice view 
+        return view('advice', compact('advice'));
+    }
 }

@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Advice;
+use App\Models\CategoryAdvice;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Nette\Utils\Random;
@@ -24,7 +25,7 @@ class AdviceFactory extends Factory
     {
         return [
             'id' => null,
-            'category_id' => rand(1,6),
+            'category_id' => CategoryAdvice::pluck('id')->random(),
             'name' => fake()->unique()->name(),
             'content' => fake()->sentence(1),
             'img' => "https://via.placeholder.com/640x480.png/000077?tex...",
