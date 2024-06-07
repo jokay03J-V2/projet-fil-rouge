@@ -53,6 +53,9 @@ jobs:
     - name: Create database
       run: mysql -e 'CREATE DATABASE testdatabase;' -uroot -proot
 
+    - name: Update permissions
+      run: chmod -R 777 ./
+
     - name: Start migration
       run: php artisan migrate:fresh --seed --env=testing
 
