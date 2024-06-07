@@ -31,7 +31,7 @@ function addCard(info) {
         p.classList.add('text-xl');
         if (i === 1) {
             if (info.libelle_profession === null || info.libelle_profession === undefined) {
-                p.textContent = `n'a pas de proféssion`
+                p.textContent = `n'a pas de profession`
             } else {
                 p.textContent = `${info.libelle_profession}`
             }
