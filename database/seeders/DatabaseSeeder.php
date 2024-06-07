@@ -4,11 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\UrgencyCategory;
 use App\Models\UrgencyNumber;
-use App\Models\InformationPoint;
-use App\Models\InformationService;
-use App\Models\ServicePointInformation;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -32,19 +28,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategoryAdviceSeeder::class,
             AdviceSeeder::class,
+            InformationPointSeeder::class,
         ]);
-         $points = InformationPoint::factory(5)->create();
 
-
-         $services = InformationService::factory(5)->create();
-        $points->each(function ($point) use ($services) {
-            $services->each(function ($service) use ($point) {
-                $i = rand(0,1);
-                if ($i == 1) {
-                    ServicePointInformation::create(['service_id' => $service->id, 'information_id' => $point->id]);
-                }
-            });
-
-        });
     }
 }

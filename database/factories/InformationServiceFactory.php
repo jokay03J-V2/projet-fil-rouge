@@ -14,6 +14,8 @@ class InformationServiceFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
+//    create fake service
     public function definition(): array
     {
         return [

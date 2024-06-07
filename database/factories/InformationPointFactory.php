@@ -14,6 +14,7 @@ class InformationPointFactory extends Factory
      *
      * @return array<string, mixed>
      */
+//    create and fill with fake element information point table
     public function definition(): array
     {
         return [

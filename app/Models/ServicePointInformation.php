@@ -14,11 +14,13 @@ class ServicePointInformation extends Model
 
     protected $fillable = ["service_id", "information_id"];
 
+    //    create relation
     public function InformationPoint(): BelongsToMany
     {
         return $this->belongsToMany(InformationPoint::class);
     }
 
+    //    create relation
     public function InformationService(): BelongsToMany
     {
         return $this->belongsToMany(InformationService::class);

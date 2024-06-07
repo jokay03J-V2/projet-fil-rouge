@@ -14,6 +14,7 @@ class InformationService extends Model
 
     protected $fillable = ["name"];
 
+    //    create relation
     public function InformationPoint(): BelongsToMany
     {
         return $this->belongsToMany(InformationPoint::class);
