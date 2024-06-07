@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('hourly');
             $table->string("address");
             $table->string('postcode');
+            $table->string('phone_number');
         });
 
 //        create table information_service-information
