@@ -39,6 +39,9 @@ jobs:
     - name: Start mysql
       run: 'sudo systemctl start mysql.service'
 
+    - name: Create database
+      run: mysql -e 'CREATE DATABASE tesdatabase;' -uroot -proot
+
     - name: Start migration
       run: php artisan migrate:fresh --seed --env=testing
 
