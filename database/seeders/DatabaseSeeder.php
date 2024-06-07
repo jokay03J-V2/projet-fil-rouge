@@ -2,10 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\UrgencyCategory;
-use App\Models\UrgencyNumber;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,12 +16,6 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
-
-        // create category
-        UrgencyCategory::factory(5)->create()->each(function ($model) {
-            // on each created cateogry, create urgency number with category id
-            UrgencyNumber::factory(10, ['category_id' => $model->id])->create();
-        });
 
         $this->call([
             CategoryAdviceSeeder::class,
