@@ -21,6 +21,7 @@ class InformationPointFactory extends Factory
             'hourly' => "9h30-12h00 13h30-18h30 ",
             'address' => $this->faker->streetAddress(),
             'postcode' => $this->faker->postcode(),
+            'phone_number' => $this->faker->phoneNumber(),
         ];
     }
 }
