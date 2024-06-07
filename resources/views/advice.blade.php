@@ -6,25 +6,16 @@
 
     </x-slot>
 
-    <div class="flex flex-col">
+    <div class="flex flex-col items-center">
 
         <article class="flex flex-col items-center justify-center w-11/12 rounded-2xl border-2 border-primary m-auto">
             <img src="{{$advice->img}}" alt="advice img" class="w-full h-80 rounded-t-2xl object-cover">
             <p class="text-center p-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat assumenda nulla quam
-                quibusdam. Aspernatur quisquam odit voluptatibus neque quis mollitia alias commodi? Cumque vel, aliquam
-                accusantium odit modi mollitia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-                repellat assumenda nulla quam quibusdam. Aspernatur quisquam odit voluptatibus neque quis mollitia alias
-                commodi? Cumque vel, aliquam accusantium odit modi mollitia.Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corrupti repellat assumenda nulla quam quibusdam. Aspernatur quisquam odit
-                voluptatibus neque quis mollitia alias commodi? Cumque vel, aliquam accusantium odit modi mollitia.Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat assumenda nulla quam quibusdam.
-                Aspernatur quisquam odit voluptatibus neque quis mollitia alias commodi? Cumque vel, aliquam accusantium
-                odit modi mollitia.
+                {{ $advice->content}}
             </p>
         </article>
 
-        <a href=""><button class="bg-primary p-2 w-20 rounded-lg">retour</button></a>
+        <a href="/advice" class="md:hidden"><button class="bg-primary p-2 m-14 w-20 rounded-lg mb-32">retour</button></a>
 
     </div>
 </x-app-layout>
