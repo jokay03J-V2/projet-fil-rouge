@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h1 class="text-3xl">Rechercher un point d'informations</h1>
+        <h1 class="font-title text-4xl m-4 text-center w-3/4 md:w-full">Rechercher un point d'informations</h1>
         <x-form action="{{route('information.point')}}">
             <input type="text" class="text-black border-none rounded-lg" name="query" placeholder="Chercher par code postale">
             <x-select class="text-black" name="selectquery" id="services">
@@ -12,7 +12,7 @@
             <x-submit-button>Envoyer</x-submit-button>
         </x-form>
     </x-slot>
-    <div class="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-4 p-4">
+    <div class="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-3 my-20 mx-10">
 
             @foreach ($points as $point)
         <article class="flex flex-col items-center rounded-xl border border-tonal w-full p-1">

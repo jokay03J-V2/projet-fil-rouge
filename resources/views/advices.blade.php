@@ -1,16 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
-        <h1 class="text-6xl font-title p-6 text-center">Rechercher un conseil</h1>
-
-
+        <h1 class="text-4xl font-title text-center p-10">Rechercher un conseil</h1>
         <x-form action="{{route('page.advices')}}">
             <div class="flex flex-col">
-                <label for="search" class="text-black">Rechercher un conseil</label>
                 <input type="search" name="query" id="search" class="rounded-lg border-none text-black"
                     placeholder="Rechercher par titre">
             </div>
             <div class="flex flex-col">
-                <label for="query" class="text-black">Selectionnez une catégorie</label>
                 <x-select name="categoryAdvice" id="query">
                     <option value="all" selected>Toutes les catégories</option>
                     @foreach ($categories as $category)
@@ -24,7 +20,7 @@
 
     </x-slot>
 
-    <div class="grid grid-cols-1 gap-8 justify-items-center md:grid-cols-2 lg:grid-cols-3 mt-20 mb-20">
+    <div class="grid grid-cols-1 gap-8 justify-items-center md:grid-cols-2 lg:grid-cols-3 my-20">
 
         @if(count($advices) < 1)
             <h3 class="text-center">Aucun résultat trouvé</h3>
