@@ -12,7 +12,7 @@
             <x-submit-button>Envoyer</x-submit-button>
         </x-form>
     </x-slot>
-    <div class="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-4 my-20 mx-10">
+    <div class="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-3 my-20 mx-10">
 
             @foreach ($points as $point)
         <article class="flex flex-col items-center rounded-xl border border-tonal w-full p-1">

@@ -4,12 +4,6 @@
     <!------------------------------------------------------------------------------------------------------>
     <x-slot name="header">
         <h1 class="font-title text-4xl m-4 text-center w-3/4 md:w-full">Rechercher un praticien</h1>
-        <p class="font-sans text-lg w-10/12 text-center my-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, consequuntur! Excepturi dolores tempore
-            debitis, placeat fugiat error laborum voluptatem aperiam illum nam recusandae! Saepe quam officiis id eius
-            ex
-            ducimus.
-        </p>
         <x-form action="#">
             <x-select name="practitioners_select" id="practitioners_select">
                 <option value="default">select profession</option>
