@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h1 class="text-6xl font-title p-6 text-center mb-16">{{ $advice->name }}</h1>
+        <h1 class="text-4xl font-title p-10 text-center mb-16">{{ $advice->name }}</h1>
     </x-slot>
 
     <div class="flex flex-col items-center mt-24 mb-24">

@@ -1,7 +1,7 @@
 <x-app-layout>
     <!-- header -->
     <x-slot name="header">
-        <h1 class="font-title text-4xl m-4 text-center">Rechercher un numéro d’urgence</h1>
+        <h1 class="font-title text-4xl m-4 text-center w-3/4 md:w-full">Rechercher un numéro d’urgence</h1>
         <x-form action="{{route('page.numbers')}}">
             <x-select name="query" id="query">
                 <option value="null" @unless($query !== 'null') selected @endunless>Tout les catégories</option>
@@ -14,7 +14,7 @@
         </x-form>
     </x-slot>
     <!-- main -->
-    <ul class="px-10 grid grid-cols-1 gap-2 mb-10 md:grid-cols-2 lg:grid-cols-4">
+    <ul class="mx-10 my-20 grid grid-cols-1 gap-6 mb-10 md:grid-cols-2 lg:grid-cols-3">
         @foreach ($numbers as $number)        
             <li class="w-full">
                 <article class="p-5 flex flex-col items-center rounded-xl border border-tonal" class="w-full">
