@@ -5,12 +5,10 @@
 
         <x-form action="{{route('page.advices')}}">
             <div class="flex flex-col">
-                <label for="search" class="text-black">Rechercher un conseil</label>
                 <input type="search" name="query" id="search" class="rounded-lg border-none text-black"
                     placeholder="Rechercher par titre">
             </div>
             <div class="flex flex-col">
-                <label for="query" class="text-black">Selectionnez une catégorie</label>
                 <x-select name="categoryAdvice" id="query">
                     <option value="all" selected>Toutes les catégories</option>
                     @foreach ($categories as $category)
