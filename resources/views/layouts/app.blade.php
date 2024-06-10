@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Mental Hub') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +18,7 @@
             
         <!-- Page Heading -->
         @isset($header)
-            <header class="w-full flex flex-col justify-center items-center bg-primary text-white">
+            <header class="w-full flex flex-col justify-center items-center text-white bg-[url('/public/img_folder/banner.svg')] bg-center bg-cover">
                     @include('layouts.navigation')
                 {{ $header }}
             </header>
