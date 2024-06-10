@@ -3,11 +3,11 @@
         <h1 class="text-6xl font-title p-6 text-center mb-16">{{ $advice->name }}</h1>
     </x-slot>
 
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center mt-24 mb-24">
 
-        <article class="flex flex-col items-center justify-center w-11/12 rounded-2xl border-2 border-primary m-auto">
-            <img src="{{$advice->img}}" alt="advice img" class="w-full h-80 rounded-t-2xl object-cover">
-            <p class="text-center p-4">
+        <article class="flex flex-col items-center justify-center w-9/12 rounded-2xl border-2 border-primary m-auto">
+            <img src="{{$advice->img}}" alt="advice img" class="w-full h-96 rounded-t-2xl object-cover">
+            <p class="text-center px-20 py-10 text-lg">
                 {{ $advice->content}}
             </p>
         </article>
