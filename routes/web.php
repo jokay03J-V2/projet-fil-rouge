@@ -16,3 +16,10 @@ Route::get('/practitioners', [PractitionersController::class, 'showPractitioner'
 Route::get('/mentions-legales', function () {
     return view('legal');
 });
+
+// admin
+Route::prefix('/admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin/home');
+    })->name('admin.home');
+})->middleware('auth:sanctum');
