@@ -9,5 +9,8 @@
         <x-link-nav href="{{route('page.find_practitioners')}}">Praticien </x-link-nav>
         <x-link-nav href="{{route('page.numbers')}}">Numéro d’urgence</x-link-nav>
         <x-link-nav href="{{route('information.point')}}">Point d’informations</x-link-nav>
+        @if($user = auth()->user())
+            <x-link-nav href="{{route('logout')}}">Se déconnecter</x-link-nav>
+        @endif
     </ul>
 </nav>
