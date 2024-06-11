@@ -12,6 +12,7 @@ class CategoryAdviceSeeder extends Seeder
      */
     public function run(): void
     {
+        // create 5 category of advices
         CategoryAdvice::factory()->count(5)->create();
     }
 }

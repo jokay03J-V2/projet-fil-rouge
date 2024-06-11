@@ -12,6 +12,7 @@ class AdviceSeeder extends Seeder
      */
     public function run(): void
     {
+        // create 6 advices
         Advice::factory()->count(6)->create();
     }
 }

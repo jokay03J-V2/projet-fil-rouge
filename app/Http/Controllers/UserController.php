@@ -9,6 +9,7 @@ class UserController extends Controller
 {
     public function showLogin()
     {
+        // return on the view Login
         return view('Auth.Login');
     }
 
@@ -17,17 +18,17 @@ class UserController extends Controller
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
-        ]);
-
+        ]); // check if data can be validated 
+ 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-
+            // fenerate a session
             return redirect()->intended('/'); 
         }
 
         return back()->withErrors([
             'email' => 'Votre mot de passe ou votre adresse e-mail est erroné(e). Essayez de les saisir à nouveau.',
-        ]);
+        ]); // error message
     }
 
     public function logout(Request $request)
@@ -35,6 +36,7 @@ class UserController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/login');
+        return redirect('/');
+        // logout and return to login view
     }
 }
