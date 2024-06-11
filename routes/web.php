@@ -18,9 +18,9 @@ Route::get('/mentions-legales', function () {
     return view('legal');
 });
 
-Route::get('/login', [UserController::class, 'showLogin'])->name('page.Login');
+Route::get('/login', [UserController::class, 'showLogin'])->name('page.login.show');
 Route::get('/logout', [UserController::class, 'Logout'])->name('logout');
 
 
 
-Route::post('/login', [UserController::class, 'Login'])->name('page.login');
+Route::post('/login', [UserController::class, 'Login'])->name('login');
