@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-[url('/public/img_folder/banner.svg')] bg-center bg-cover bg-no-repeat h-screen relative flex justify-center items-center">
-    <form method="POST" action="" class="w-2/4 lg:w-3/12 absolute bg-white rounded-xl flex flex-col gap-8 items-center">
+    <form method="POST" action="" class="w-3/4 lg:w-3/12 lg:min-w-80 absolute bg-white rounded-xl flex flex-col gap-8 items-center">
         @csrf
         <h1 class="text-4xl font-title p-10 text-center">Login Admin</h1>
         <input type="email" name="email" placeholder="Email" class="w-2/3 rounded-xl border-2 border-primary" required>
