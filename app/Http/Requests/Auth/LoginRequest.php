@@ -40,15 +40,17 @@ class LoginRequest extends FormRequest
     public function authenticate(): void
     {
         $this->ensureIsNotRateLimited();
+        // check if the user is limited in connection attempt 
 
-        if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
+        if (! Auth::attempt($this->only('email', 'password'))) {
+            // if the information given is invalid 
             RateLimiter::hit($this->throttleKey());
-
+            // add 1 attempt to counter 
             throw ValidationException::withMessages([
                 'email' => trans('auth.failed'),
             ]);
         }
-
+        // if true clear the conter of attempt
         RateLimiter::clear($this->throttleKey());
     }
 
@@ -61,6 +63,7 @@ class LoginRequest extends FormRequest
     {
         if (! RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
             return;
+            // check if the number of attempts is less than 5
         }
 
         event(new Lockout($this));
@@ -73,6 +76,7 @@ class LoginRequest extends FormRequest
                 'minutes' => ceil($seconds / 60),
             ]),
         ]);
+        // If you exceed 5 attempts, you are blocked for 60 seconds. 
     }
 
     /**

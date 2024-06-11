@@ -2,18 +2,18 @@
 
 namespace Database\Seeders;
 
-use App\Models\Advice;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class AdviceSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        // create 6 advices
-        Advice::factory()->count(6)->create();
+        // create 1 user
+        User::factory()->count(1)->create();
     }
 }
 
