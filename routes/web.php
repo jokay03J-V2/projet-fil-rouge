@@ -18,6 +18,13 @@ Route::get('/mentions-legales', function () {
     return view('legal');
 });
 
+// admin
+Route::prefix('/admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin/home');
+    })->name('admin.home');
+})->middleware('auth:sanctum');
+
 Route::get('/login', [UserController::class, 'showLogin'])->name('page.login.show');
 Route::get('/logout', [UserController::class, 'Logout'])->name('logout');
 
