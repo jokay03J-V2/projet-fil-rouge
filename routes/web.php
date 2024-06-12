@@ -15,4 +15,4 @@ Route::get('/information-point', [\App\Http\Controllers\InformationPointControll
 Route::get('/practitioners', [PractitionersController::class, 'showPractitioner'])->name('page.find_practitioners');
 Route::get('/mentions-legales', function () {
     return view('legal');
-});
+})->name('page.legal');
