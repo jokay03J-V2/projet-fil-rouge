@@ -28,14 +28,17 @@
                 <a href="{{route('admin.home')}}"><img src="/img_folder/logo.png" alt="logo"></a>
                 <h1 class="text-2xl w-full border-b text-center border-white">Back office</h1>
                 <ul class="w-full flex flex-col gap-2 my-2">
-                    <li class="p-1 transition-all hover:bg-tonal">
-                        <a href="#" class="flex items-center gap-1"><x-lucide-map-pinned class="h-5"/> Point d'information</a>
+                    <li>
+                        <a href="#" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-map-pinned class="h-5"/> Point d'information</a>
                     </li>
-                    <li class="p-1 transition-all hover:bg-tonal">
-                        <a href="#" class="flex items-center gap-1"><x-lucide-message-circle-question class="h-5"/> Conseil</a>
+                    <li>
+                        <a href="#" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-message-circle-question class="h-5"/> Conseil</a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-phone class="h-5"/> Numéro d'urgence</a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin.register.show')}}" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-users class="h-5"/> Gestion utilisateur</a>
                     </li>
                 </ul>
             </aside>
