@@ -20,11 +20,14 @@ Route::get('/mentions-legales', function () {
 
 
 // admin
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('/', function () {
         return view('admin/home');
     })->name('admin.home');
-})->middleware('auth:sanctum');
+
+    Route::get('/register', [UserController::class, 'showRegister'])->name('admin.register.show');
+    Route::post('/register', [UserController::class, 'register'])->name('admin.register');
+});
 
 Route::get('/login', [UserController::class, 'showLogin'])->name('page.login.show');
 Route::get('/logout', [UserController::class, 'Logout'])->name('logout');
