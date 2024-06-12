@@ -15,7 +15,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="flex flex-col">
-            
+
         <!-- Page Heading -->
         @isset($header)
             <header class="w-full flex flex-col justify-center items-center text-white bg-[url('/public/img_folder/banner.svg')] bg-center bg-cover">
@@ -30,6 +30,7 @@
 
         <footer class="w-full flex flex-col justify-center items-center bg-slate-600 p-10 text-white text-lg">
             <small>Create by EDENSchool</small>
+            <a href="{{route('page.legal')}}">mentions légales</a>
         </footer>
     </body>
 </html>
