@@ -21,9 +21,12 @@ export default {
                 'tertiary': "#F2BFAC",
                 'tonal': "#2BA0CB",
                 'white': "#FFFFFF",
-            }
+            },
+
+          
         },
     },
+
 
     plugins: [forms],
 };
