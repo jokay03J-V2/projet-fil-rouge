@@ -1,1 +1,1 @@
-<input type="submit" value="{{$slot}}" {{ $attributes->merge(["class" => "py-1 px-2 rounded-lg bg-white text-black"])}}>
+<input type="submit" value="{{$slot}}" {{$attributes->twMerge('py-1 px-2 rounded-lg bg-white text-black')}}>
