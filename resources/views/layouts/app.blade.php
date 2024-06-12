@@ -30,7 +30,7 @@
 
         <footer class="w-full flex flex-col justify-center items-center bg-slate-600 p-10 text-white text-lg">
             <small>Create by EDENSchool</small>
-            <a href="{{route('page.legal')}}">mentions légales</a>
+            <a href="{{route('page.legal')}}">Mentions légales</a>
         </footer>
     </body>
 </html>
