@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class UrgencyNumber extends Model
 {
@@ -12,4 +13,9 @@ class UrgencyNumber extends Model
     use HasFactory;
 
     protected $fillable = ["category_id", "content", "name", "hourly"];
+
+    public function categories(): BelongsTo
+    {
+        return $this->belongsTo(UrgencyCategory::class);
+    }
 }

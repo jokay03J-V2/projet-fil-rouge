@@ -15,7 +15,7 @@
         @vite(['resources/css/app.css'])
     </head>
     <body class="flex flex-col">
-            
+
         <!-- Page Heading -->
         @isset($header)
             <header>
@@ -35,7 +35,7 @@
                         <a href="#" class="flex items-center gap-1"><x-lucide-message-circle-question class="h-5"/> Conseil</a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-phone class="h-5"/> Numéro d'urgence</a>
+                        <a href="{{route('admin.numbers')}}" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-phone class="h-5"/> Numéro d'urgence</a>
                     </li>
                 </ul>
             </aside>

@@ -15,7 +15,7 @@
    <!------------------------------------------------------------------------------------------------------>
    <section class="flex flex-col justify-center items-center gap-10 lg:gap-14 w-11/12 mx-auto my-20">
    <h2 class="lg:self-start font-title text-4xl mt-14">Fonctionnalitées</h2>
-   
+
    <!-- Home card -->
    <a href="{{ route('information.point') }}">
       <article class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">

@@ -24,6 +24,7 @@ Route::prefix('/admin')->group(function () {
     Route::get('/', function () {
         return view('admin/home');
     })->name('admin.home');
+    Route::get('/numbers', [UrgencyNumberController::class, 'adminindex'])->name('admin.numbers');
 })->middleware('auth:sanctum');
 
 Route::get('/login', [UserController::class, 'showLogin'])->name('page.login.show');
