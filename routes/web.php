@@ -27,6 +27,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
 
     Route::get('/register', [UserController::class, 'showRegister'])->name('admin.register.show');
     Route::post('/register', [UserController::class, 'register'])->name('admin.register');
+    Route::get('/practitionersUpdate', [PractitionersController::class, 'requestJson'])->name('admin.update.practitioners');
 });
 
 Route::get('/login', [UserController::class, 'showLogin'])->name('page.login.show');

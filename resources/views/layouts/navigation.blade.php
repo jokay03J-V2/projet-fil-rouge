@@ -10,7 +10,7 @@
         <li><button popovertarget="home_menu_list"><x-lucide-x class="w-14 lg:hidden absolute top-0 right-0" id="btn_home_menu_action" ></x-lucide-x></button><li>
         <x-link-nav href="{{route('page.home')}}">Accueil</x-link-nav>
         <x-link-nav href="{{route('page.advices')}}">Conseils</x-link-nav>
-        <x-link-nav href="{{route('page.find_practitioners')}}">Praticien </x-link-nav>
+        <x-link-nav href="{{route('page.find_practitioners')}}">Praticiens</x-link-nav>
         <x-link-nav href="{{route('page.numbers')}}">Numéro d’urgence</x-link-nav>
         <x-link-nav href="{{route('information.point')}}">Point d’informations</x-link-nav>
         @if($user = auth()->user())
