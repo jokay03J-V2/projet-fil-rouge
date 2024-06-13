@@ -53,7 +53,7 @@
       </a>
 
       <!-- Praticiens card -->
-      <a href="{{ route('page.find_practitioners') }}" class="h-full">
+      <a href="{{ route('page.find_practitioners') }}" class="md:h-full lg:h-full">
          <article
             class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
             <img src="./img_folder/practitioners.jpg" alt="/"
@@ -70,7 +70,7 @@
          </article>
       </a>
 
-      <a href="{{ route('page.numbers') }}" class="mb-16">
+      <a href="{{ route('page.numbers') }}" class="mb-16 md:h-full lg:h-full">
          <article
             class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
             <img src="./img_folder/emergency_number.jpg" alt="/"
