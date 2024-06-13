@@ -40,6 +40,9 @@
                     <li>
                         <a href="{{route('admin.register.show')}}" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-users class="h-5"/> Gestion utilisateur</a>
                     </li>
+                    <li>
+                        <a href="{{route('admin.update.practitioners')}}" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-user-round-search class="h-5"/>mettre a jour les practiciens</a>
+                    </li>
                 </ul>
             </aside>
             <div class="w-full md:w-10/12">
