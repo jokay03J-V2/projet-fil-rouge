@@ -22,7 +22,7 @@ return new class extends Migration {
             $table->unsignedBigInteger("category_id");
             $table->foreign('category_id')->references('id')->on('category_advice');
             $table->string('name', 100);
-            $table->string('content');
+            $table->text('content');
             $table->string('img');
         });
 
