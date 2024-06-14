@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 14 juin 2024 à 08:49
+-- Généré le : ven. 14 juin 2024 à 07:34
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -69,8 +69,6 @@ CREATE TABLE IF NOT EXISTS `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('c350b927c427d057', 's:40:\"py-1 px-2 rounded-lg bg-white text-black\";', 2033711216),
-('e1a5c02cfc5d7a11', 's:72:\"flex flex-col gap-1 mb-5 w-9/12 pt-2 md:flex-row md:justify-center mt-24\";', 2033711216),
 ('test@example.com|127.0.0.1', 'i:1;', 1718179564),
 ('test@example.com|127.0.0.1:timer', 'i:1718179564;', 1718179564);
 
@@ -162,7 +160,7 @@ INSERT INTO `emergency_number` (`id`, `name`, `content`, `hourly`, `category_id`
 (51, 'Etudiants, numéro d’écoute national (Cnae, Coordination Nationale d’Accompagnement des Etudiants et Etudiantes, pour le ministère de l’Enseignement supérieur, par l’association En avant toutes)', '0 800 73 78 00', 'lundi au vendredi 10h-21h, samedi 10h-14h', 10),
 (52, 'Acceptess-T (association)', 'rdv à prendre au 01 42 29 23 67', 'En visio (lundi 13h-19h)', 11),
 (53, 'Croix-Rouge écoute (association)', '0 800 858 858', 'lundi au vendredi 9h-19h, samedi dimanche 12h-18h', 9),
-(54, 'SOS Amitié (association)', '09 72 39 40 50  (7j/7 et 24h/24)', '(7j/7 13h-03h du matin)', 9),
+(54, 'SOS Amitié (association)', '09 72 39 40 50  (7j/7 et 24h/24) 01 46 21 46 46  en langue anglaise (7/7 3PM-11PM)', '(7j/7 13h-03h du matin)', 9),
 (55, 'Ecoute contre l’homophobie (SIS association, pour le ministère de l’Education nationale et de la jeunesse)', '0 800 005 774', '(7j/7 8h-23h)', 11),
 (57, 'Allo-suicide (association Lueur d’espoir)', '04 22 53 74 59', '7j/7 20h-23h', 8),
 (58, 'Allo TDAH (association TDAH-partout pareil France)', '07 69 44 02 32', 'lundi au samedi 9h30-11h, 16h-17h30 et 21h-22h', 12),
@@ -359,9 +357,7 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('e7HOdxWYjyOLDO1jkNw2XW1D3FNoYK9A2Yby6JlH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia09ndWphWXhTbkN2cFNoOVpsbjBUUExub05vN05xRzMyRDVGdklTciI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZHZpY2VzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1718272806),
-('hd1ZAwZXAufBjsVHC8bydRHGZM4kTdAZeqYC1MRR', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibml6VjV0SzBpUmMxNTNVU1JycHVDTVplN3I3SjJLd25QTXBxeG5PaiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9udW1iZXJzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1718354933),
-('hZmCSw94wvoj7YdmI0va4f17phpw6UxpS4vWt8e0', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTER3b2N6MnBrYkdlclBBbWV0bEZUdGpoOXZkOUVKQVNaQkVBNjU4bSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1718351026);
+('e7HOdxWYjyOLDO1jkNw2XW1D3FNoYK9A2Yby6JlH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia09ndWphWXhTbkN2cFNoOVpsbjBUUExub05vN05xRzMyRDVGdklTciI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZHZpY2VzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1718272806);
 
 -- --------------------------------------------------------
 
