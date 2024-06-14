@@ -13,11 +13,12 @@
    <!------------------------------------------------------------------------------------------------------>
    <!-- main content -->
    <!------------------------------------------------------------------------------------------------------>
-   <section class="flex flex-col justify-center items-center gap-10 lg:gap-14 w-11/12 mx-auto my-20">
-      <h2 class="lg:self-start font-title text-4xl mt-14">Fonctionnalitées</h2>
+   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-10 lg:gap-14 w-11/12 mx-auto my-20">
+      <h2 class="lg:self-start font-title text-4xl mt-14 md:col-span-2 lg:col-span-1">Fonctionnalitées</h2>
+
 
       <!-- Home card -->
-      <a href="{{ route('information.point') }}">
+      <a href="{{ route('information.point') }}" class="md:h-full lg:h-full">
          <article
             class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
             <img src="{{asset("img_folder/information_point.webp")}}" alt="img information"
@@ -25,8 +26,10 @@
             <hgroup class="w-10/12 p-10 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Point d'informations</h3>
                <p class="m-2">
-                  Un point d'information sur la santé mentale offre des ressources, conseils et soutien pour promouvoir
-                  le bien-être mental. Il fournit des informations sur les troubles mentaux, les options de traitement
+                  Un point d'information sur la santé mentale offre des ressources, conseils et soutien pour
+                  promouvoir
+                  le bien-être mental. Il fournit des informations sur les troubles mentaux, les options de
+                  traitement
                   et les services de soutien disponibles. Son objectif est de sensibiliser et de réduire la
                   stigmatisation liée à la santé mentale.
                </p>
@@ -87,7 +90,7 @@
          </article>
       </a>
 
+         <!------------------------------------------------------------------------------------------------------>
+      </section>
       <!------------------------------------------------------------------------------------------------------>
-   </section>
-   <!------------------------------------------------------------------------------------------------------>
 </x-app-layout>
