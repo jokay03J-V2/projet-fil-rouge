@@ -19,7 +19,7 @@
    <!-- Home card -->
    <a href="{{ route('information.point') }}">
       <article class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-         <img src="./img_folder/information_point.jpg" alt="/" class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
+         <img src="./img_folder/information_point.webp" alt="img information" class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
          <hgroup class="w-10/12 p-10 text-center lg:text-start">
             <h3 class="text-secondary text-3xl font-title m-2">Point d'informations</h3>
             <p class="m-2">
@@ -34,7 +34,7 @@
    <!-- Conseils card -->
    <a href="{{ route('page.advices') }}">
       <article class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-         <img src="./img_folder/conseil.jpg" alt="/" class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
+         <img src="./img_folder/conseil.webp" alt="img conseil" class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
          <hgroup class="w-10/12 p-10 text-center lg:text-start">
             <h3 class="text-secondary text-3xl font-title m-2">Conseils</h3>
             <p class="m-2">
@@ -49,7 +49,7 @@
    <!-- Praticiens card -->
    <a href="{{ route('page.find_practitioners') }}">
       <article class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-         <img src="./img_folder/practitioners.jpg" alt="/" class="w-full lg:w-1/4 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
+         <img src="./img_folder/practitioners.webp" alt="img Praticien" class="w-full lg:w-1/4 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
          <hgroup class="w-10/12 p-10 text-center lg:text-start">
             <h3 class="text-secondary text-3xl font-title m-2">Praticiens</h3>
             <p class="m-2">
@@ -63,7 +63,7 @@
 
    <a href="{{ route('page.numbers') }}" class="mb-16">
    <article class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-      <img src="./img_folder/emergency_number.jpg" alt="/" class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
+      <img src="./img_folder/emergency_number.webp" alt="img femme urgence" class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
       <hgroup class="w-10/12 p-10 text-center lg:text-start">
          <h3 class="text-secondary text-3xl font-title m-2">Numéro d’urgence</h3>
          <p class="m-2">
