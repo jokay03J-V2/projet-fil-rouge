@@ -17,7 +17,7 @@
 
         @foreach ($points as $point)
             <article class="flex flex-col items-center rounded-xl border border-tonal w-full p-1">
-                <h2 class="p-6 truncate w-9/12 font-title text-2xl text-secondary ">{{$point->name}}</h2>
+                <h2 class="p-6 truncate w-9/12 text-center font-title text-2xl text-secondary ">{{$point->name}}</h2>
                 <ul class="flex flex-col justify-center items-center gap-2 text-center">
                     <li class="flex items-center">
                         <x-lucide-calendar class="w-6 m-0.5" />
