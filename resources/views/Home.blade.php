@@ -43,26 +43,28 @@
          <a href="{{ route('information.point') }}">
             <article
                class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/information_point.webp" alt="img information"
+               <img src="{{asset('img_folder/information_point.webp')}}" alt="img information"
                   class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
                <hgroup class="w-10/12 p-10 text-center lg:text-start">
                   <h3 class="text-secondary text-3xl font-title m-2">Point d'informations</h3>
                   <p class="m-2">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae blanditiis tenetur tempore
-                     rem nam aliquid eaque soluta amet numquam rerum nobis qui, et animi excepturi incidunt architecto
-                     ipsa
-                     perferendis?
+                     Un point d'information sur la santé mentale offre des ressources, conseils et soutien pour
+                     promouvoir
+                     le bien-être mental. Il fournit des informations sur les troubles mentaux, les options de
+                     traitement
+                     et les services de soutien disponibles. Son objectif est de sensibiliser et de réduire la
+                     stigmatisation liée à la santé mentale.
                   </p>
                </hgroup>
             </article>
          </a>
 
          <!-- Conseils card -->
-         <a href="{{ route('page.advices') }}" class="md:h-full lg:h-full">
+         <a href="{{ route('page.advices') }}">
             <article
-               class="flex flex-col lg:flex-row items-center lg:items-start w-full h-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/conseil.webp" alt="img conseil"
-                  class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-80 lg:rounded-r-none">
+               class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+               <img src="{{asset('img_folder/conseil.webp')}}" alt="img conseil"
+                  class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
                <hgroup class="w-10/12 p-10 text-center lg:text-start">
                   <h3 class="text-secondary text-3xl font-title m-2">Conseils</h3>
                   <p class="m-2">
@@ -74,30 +76,13 @@
                </hgroup>
             </article>
          </a>
-         <!-- Conseils card -->
-         <a href="{{ route('page.advices') }}">
-            <article
-               class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/conseil.webp" alt="img conseil"
-                  class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
-               <hgroup class="w-10/12 p-10 text-center lg:text-start">
-                  <h3 class="text-secondary text-3xl font-title m-2">Conseils</h3>
-                  <p class="m-2">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae blanditiis tenetur tempore
-                     rem nam aliquid eaque soluta amet numquam rerum nobis qui, et animi excepturi incidunt architecto
-                     ipsa
-                     perferendis?
-                  </p>
-               </hgroup>
-            </article>
-         </a>
 
          <!-- Praticiens card -->
-         <a href="{{ route('page.find_practitioners') }}" class="md:h-full lg:h-full">
+         <a href="{{ route('page.find_practitioners') }}">
             <article
-               class="flex flex-col lg:flex-row items-center lg:items-start w-full h-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/practitioners.webp" alt="img Praticien"
-                  class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-80 lg:rounded-r-none">
+               class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+               <img src="{{asset("img_folder/practitioners.webp")}}" alt="img Praticien"
+                  class="w-full lg:w-1/4 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
                <hgroup class="w-10/12 p-10 text-center lg:text-start">
                   <h3 class="text-secondary text-3xl font-title m-2">Praticiens</h3>
                   <p class="m-2">
@@ -112,29 +97,12 @@
                </hgroup>
             </article>
          </a>
-         <!-- Praticiens card -->
-         <a href="{{ route('page.find_practitioners') }}">
+
+         <a href="{{ route('page.numbers') }}" class="mb-16">
             <article
                class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/practitioners.webp" alt="img Praticien"
-                  class="w-full lg:w-1/4 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
-               <hgroup class="w-10/12 p-10 text-center lg:text-start">
-                  <h3 class="text-secondary text-3xl font-title m-2">Praticiens</h3>
-                  <p class="m-2">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae blanditiis tenetur tempore
-                     rem nam aliquid eaque soluta amet numquam rerum nobis qui, et animi excepturi incidunt architecto
-                     ipsa
-                     perferendis?
-                  </p>
-               </hgroup>
-            </article>
-         </a>
-
-         <a href="{{ route('page.numbers') }}" class="mb-16 md:h-full lg:h-full">
-            <article
-               class="flex flex-col lg:flex-row items-center lg:items-start w-full h-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/emergency_number.webp" alt="img femme urgence"
-                  class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-full lg:rounded-r-none">
+               <img src="{{asset("img_folder/emergency_number.webp")}}" alt="img femme urgence"
+                  class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
                <hgroup class="w-10/12 p-10 text-center lg:text-start">
                   <h3 class="text-secondary text-3xl font-title m-2">Numéro d’urgence</h3>
                   <p class="m-2">
@@ -144,21 +112,6 @@
                      tu
                      as besoin d'aide pour faire face à des pensées suicidaires, de l'anxiété ou d'autres problèmes
                      émotionnels.
-                  </p>
-               </hgroup>
-            </article>
-         </a>
-         <a href="{{ route('page.numbers') }}" class="mb-16">
-            <article
-               class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
-               <img src="./img_folder/emergency_number.webp" alt="img femme urgence"
-                  class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
-               <hgroup class="w-10/12 p-10 text-center lg:text-start">
-                  <h3 class="text-secondary text-3xl font-title m-2">Numéro d’urgence</h3>
-                  <p class="m-2">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae blanditiis tenetur tempore
-                     rem nam aliquid eaque soluta amet numquam rerum nobis qui, et animi excepturi incidunt architecto
-                     ipsa perferendis?
                   </p>
                </hgroup>
             </article>
