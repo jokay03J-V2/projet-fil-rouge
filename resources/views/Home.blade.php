@@ -8,9 +8,6 @@
          Bienvenue sur notre page d'accueil dédiée à la santé mentale. Découvrez des ressources précieuses, des conseils
          pratiques et des services de soutien pour améliorer votre bien-être mental. Ensemble, brisons les tabous et
          promouvons une meilleure compréhension de la santé mentale.
-         Bienvenue sur notre page d'accueil dédiée à la santé mentale. Découvrez des ressources précieuses, des conseils
-         pratiques et des services de soutien pour améliorer votre bien-être mental. Ensemble, brisons les tabous et
-         promouvons une meilleure compréhension de la santé mentale.
       </p>
    </x-slot>
    <!------------------------------------------------------------------------------------------------------>
