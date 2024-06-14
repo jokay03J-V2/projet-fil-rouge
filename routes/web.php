@@ -26,7 +26,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     })->name('admin.home');
 
     Route::get('/advices', [AdviceController::class, 'AdminAdvice'])->name('admin.advice');
-    Route::get('/advices/{advice}/edit', [AdviceController::class, 'caca'])->name('advices.edit');
+    Route::get('/advices/{advice}/edit', [AdviceController::class, 'editAdvice'])->name('advices.edit');
 
 
     Route::get('/register', [UserController::class, 'showRegister'])->name('admin.register.show');

@@ -67,7 +67,7 @@ class AdviceController extends Controller
     }
 
 
-    public function caca(Advice $advice): View
+    public function editAdvice(Advice $advice): View
     {
         return view('admin/advice_admin_edit', compact('advice'));
     }
