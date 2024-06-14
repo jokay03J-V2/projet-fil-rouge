@@ -23,6 +23,10 @@ Route::prefix('/admin')->group(function () {
     Route::get('/', function () {
         return view('admin/home');
     })->name('admin.home');
+
+    Route::get('/advices', [AdviceController::class, 'AdminAdvice'])->name('admin.advice');
+    Route::get('/advices/{advice}/edit', [AdviceController::class, 'caca'])->name('advices.edit');
+
 })->middleware('auth:sanctum');
 
 Route::get('/login', [UserController::class, 'showLogin'])->name('page.login.show');

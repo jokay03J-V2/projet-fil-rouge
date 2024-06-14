@@ -32,7 +32,7 @@
                         <a href="#" class="flex items-center gap-1"><x-lucide-map-pinned class="h-5"/> Point d'information</a>
                     </li>
                     <li class="p-1 transition-all hover:bg-tonal">
-                        <a href="#" class="flex items-center gap-1"><x-lucide-message-circle-question class="h-5"/> Conseil</a>
+                        <a href="/admin/advices" class="flex items-center gap-1"><x-lucide-message-circle-question class="h-5"/> Conseil</a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center gap-1 p-1 transition-all hover:bg-tonal"><x-lucide-phone class="h-5"/> Numéro d'urgence</a>
