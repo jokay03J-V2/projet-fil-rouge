@@ -1,6 +1,6 @@
 
 <nav class="w-full flex justify-between items-center p-2 relative">
-    <a href="{{route('page.home')}}" class="text-5xl ml-4 font-title"><img src="{{asset("img_folder/logo.png")}}" alt="logo"
+    <a href="{{route('page.home')}}" class="text-5xl ml-4 font-title"><img src="{{asset("img_folder/logo.webp")}}" alt="logo"
             class="h-16"></a>
     <button popovertarget="home_menu_list">
         <x-lucide-menu class="w-14 lg:hidden" id="btn_home_menu_action" ></x-lucide-menu>
