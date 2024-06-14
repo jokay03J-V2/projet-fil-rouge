@@ -21,7 +21,7 @@
       <a href="{{ route('information.point') }}" class="md:h-full lg:h-full">
          <article
             class="flex flex-col lg:flex-row items-center lg:items-start lg:h-full w-full h-full rounded-2xl border-2 border-tonal">
-            <img src="./img_folder/information_point.webp" alt="img information"
+            <img src="{{asset('img_folder/information_point.webp')}}" alt="img information"
                class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-80 lg:rounded-r-none">
             <hgroup class="w-10/12 p-10 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Point d'informations</h3>
