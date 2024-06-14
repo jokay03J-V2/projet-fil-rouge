@@ -20,9 +20,9 @@
       <!-- Home card -->
       <a href="{{ route('information.point') }}" class="md:h-full lg:h-full">
          <article
-            class="flex flex-col lg:flex-row items-center lg:items-start lg:h-full w-full h-full rounded-2xl border-2 border-tonal">
-            <img src="./img_folder/information_point.jpg" alt="/"
-               class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-80 lg:rounded-r-none">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="{{asset("img_folder/information_point.webp")}}" alt="img information"
+               class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
             <hgroup class="w-10/12 p-10 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Point d'informations</h3>
                <p class="m-2">
@@ -38,11 +38,11 @@
       </a>
 
       <!-- Conseils card -->
-      <a href="{{ route('page.advices') }}" class="md:h-full lg:h-full">
+      <a href="{{ route('page.advices') }}">
          <article
-            class="flex flex-col lg:flex-row items-center lg:items-start w-full h-full rounded-2xl border-2 border-tonal">
-            <img src="./img_folder/conseil.jpg" alt="/"
-               class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-80 lg:rounded-r-none">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="{{asset("img_folder/conseil.webp")}}" alt="img conseil"
+               class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
             <hgroup class="w-10/12 p-10 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Conseils</h3>
                <p class="m-2">
@@ -56,38 +56,33 @@
       </a>
 
       <!-- Praticiens card -->
-      <a href="{{ route('page.find_practitioners') }}" class="md:h-full lg:h-full">
+      <a href="{{ route('page.find_practitioners') }}">
          <article
-            class="flex flex-col lg:flex-row items-center lg:items-start w-full h-full rounded-2xl border-2 border-tonal">
-            <img src="./img_folder/practitioners.jpg" alt="/"
-               class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-80 lg:rounded-r-none">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="{{asset("img_folder/practitioners.webp")}}" alt="img Praticien"
+               class="w-full lg:w-1/4 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
             <hgroup class="w-10/12 p-10 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Praticiens</h3>
                <p class="m-2">
-                  Nos praticiens en santé mentale sont des professionnels qualifiés, comme des psychologues,
-                  psychiatres
-                  et thérapeutes, dédiés à t'offrir un soutien personnalisé. Ils utilisent des approches fondées sur
-                  des
-                  preuves pour traiter divers troubles mentaux et améliorer le bien-être émotionnel. Leur objectif
-                  est
+                  Nos praticiens en santé mentale sont des professionnels qualifiés, comme des psychologues, psychiatres
+                  et thérapeutes, dédiés à t'offrir un soutien personnalisé. Ils utilisent des approches fondées sur des
+                  preuves pour traiter divers troubles mentaux et améliorer le bien-être émotionnel. Leur objectif est
                   de t'aider à retrouver une vie équilibrée et épanouissante.
                </p>
             </hgroup>
          </article>
       </a>
 
-      <a href="{{ route('page.numbers') }}" class="mb-16 md:h-full lg:h-full">
+      <a href="{{ route('page.numbers') }}" class="mb-16">
          <article
-            class="flex flex-col lg:flex-row items-center lg:items-start w-full h-full rounded-2xl border-2 border-tonal">
-            <img src="./img_folder/emergency_number.jpg" alt="/"
-               class="w-full lg:w-3/12 h-60 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:h-full lg:rounded-r-none">
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full rounded-2xl border-2 border-tonal">
+            <img src="{{asset("img_folder/emergency_number.webp")}}" alt="img femme urgence"
+               class="w-full lg:w-1/4 h-64 md:h-80 object-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none">
             <hgroup class="w-10/12 p-10 text-center lg:text-start">
                <h3 class="text-secondary text-3xl font-title m-2">Numéro d’urgence</h3>
                <p class="m-2">
-                  Les numéros d'urgence en santé mentale sont là pour toi en cas de crise. Tu peux les contacter à
-                  tout
-                  moment pour obtenir du soutien, des conseils et une assistance immédiate. N'hésite pas à appeler si
-                  tu
+                  Les numéros d'urgence en santé mentale sont là pour toi en cas de crise. Tu peux les contacter à tout
+                  moment pour obtenir du soutien, des conseils et une assistance immédiate. N'hésite pas à appeler si tu
                   as besoin d'aide pour faire face à des pensées suicidaires, de l'anxiété ou d'autres problèmes
                   émotionnels.
                </p>
@@ -95,7 +90,7 @@
          </article>
       </a>
 
+         <!------------------------------------------------------------------------------------------------------>
+      </section>
       <!------------------------------------------------------------------------------------------------------>
-   </section>
-   <!------------------------------------------------------------------------------------------------------>
 </x-app-layout>

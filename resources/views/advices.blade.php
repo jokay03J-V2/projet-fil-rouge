@@ -29,7 +29,7 @@
         @foreach ($advices as $advice)
             <a href="/advices/{{ $advice->id }}" class="w-11/12 ">
                 <article class="flex flex-col rounded-xl border border-blue-600 h-96">
-                    <img class="object-cover rounded-t-xl h-3/4 " src="img_folder/{{ $advice->img }}" alt="img conseil">
+                    <img class="object-cover rounded-t-xl h-3/4 " src="{{asset('/img_folder/' . $advice->img)}}" alt="img conseil">
                     <h2 class="p-7 truncate">{{ $advice->name }}</h2>
                 </article>
             </a>
