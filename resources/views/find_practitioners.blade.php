@@ -6,9 +6,9 @@
         <h1 class="font-title text-4xl m-4 text-center w-3/4 md:w-full">Rechercher un praticien</h1>
         <x-form action="#">
             <x-select name="practitioners_select" id="practitioners_select">
-                <option value="default">tout les profession</option>
+                <option value="default">Toutes les professions</option>
             </x-select>
-            <x-submit-button id="btn_form_practitioners">rechercher</x-submit-button>
+            <x-submit-button id="btn_form_practitioners">Rechercher</x-submit-button>
         </x-form>
     </x-slot>
     <!------------------------------------------------------------------------------------------------------>
