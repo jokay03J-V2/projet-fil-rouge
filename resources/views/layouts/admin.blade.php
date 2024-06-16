@@ -25,7 +25,7 @@
         <!-- Page Content -->
         <main {{ $attributes->merge(['class' => 'min-h-[90vh] flex flex-col md:flex-row']) }}>
             <aside class="min-h-full bg-primary p-2 flex flex-col items-center w-full text-white md:w-2/12">
-                <a href="{{route('admin.home')}}"><img src="/img_folder/logo.png" alt="logo"></a>
+                <a href="{{route('admin.home')}}"><img src="{{asset('img_folder/logo.webp')}}" alt="logo"></a>
                 <h1 class="text-2xl w-full border-b text-center border-white">Back office</h1>
                 <ul class="w-full flex flex-col gap-2 my-2">
                     <li>
